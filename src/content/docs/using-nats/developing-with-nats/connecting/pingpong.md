@@ -5,7 +5,7 @@ title: "pingpong"
 
 NATS client applications use a PING/PONG protocol to check that there is a working connection to the NATS service. Periodically the client will send PING messages to the server, which responds with a PONG. This period is configured by specifying a ping interval on the client connection settings.
 
-![](../../../.gitbook/assets/pingpong.svg)
+![](../../../../../assets/.gitbook/assets/pingpong.svg)
 
 The connection will be closed as stale when the client reaches a number of pings which recieved no pong in response, which is configured by specifying the maximum pings outstanding on the client connection settings.
 

@@ -9,7 +9,7 @@ While the vast majority of the functionality of Nex can be found inside the sing
 
 The following diagram provides an illustration of the Nex system architecture and how all of the various componenents interoperate. It might seem a bit daunting at first, so we'll cover each part of the diagram in detail next.
 
-![architecture diagram](nex-arch.png)
+![architecture diagram](../../../../assets/nex/internals/nex-arch.png)
 
 ## Workload NATS vs Control NATS
 
