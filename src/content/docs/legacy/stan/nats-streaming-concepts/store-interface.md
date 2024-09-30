@@ -1,3 +1,6 @@
+---
+title: "store-interface"
+---
 # Store Interface
 
 Every store implementation follows the [Store interface](https://github.com/nats-io/nats-streaming-server/blob/master/stores/store.go).

@@ -1,3 +1,6 @@
+---
+title: "userpass"
+---
 # Authenticating with a User and Password
 
 For this example, start the server using:

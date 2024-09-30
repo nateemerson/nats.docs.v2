@@ -1,3 +1,6 @@
+---
+title: "whats_new_210"
+---
 # NATS 2.10
 
 This guide is tailored for existing NATS users upgrading from NATS version 2.9.x. This will read as a summary with links to specific documentation pages to learn more about the feature or improvement.

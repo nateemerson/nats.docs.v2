@@ -1,3 +1,6 @@
+---
+title: "durables"
+---
 # Durable Subscriptions
 
 Regular subscriptions remember their position while the client is connected. If the client disconnects the position is lost. Durable subscriptions remember their position even if the client is disconnected.

@@ -1,3 +1,6 @@
+---
+title: "whats_new_20"
+---
 # NATS 2.0
 
 NATS 2.0 was the largest feature release since the original code base for the server was released. NATS 2.0 was created to allow a new way of thinking about NATS as a shared utility, solving problems at scale through distributed security, multi-tenancy, larger networks, and secure sharing of data.

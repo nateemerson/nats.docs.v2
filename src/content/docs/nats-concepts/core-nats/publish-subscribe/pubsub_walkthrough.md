@@ -1,3 +1,6 @@
+---
+title: "pubsub_walkthrough"
+---
 NATS is a [publish subscribe](pubsub.md) messaging system [based on subjects](../../subjects.md). Subscribers listening on a subject receive messages published on that subject. If the subscriber is not actively listening on the subject, the message is not received. Subscribers can use the wildcard tokens such as `*` and `>` to match a single token or to match the tail of a subject.
 
 # NATS Pub/Sub Walkthrough

@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Configuration Management
 
 In many cases managing the configuration in your application code is the best model, many teams though wish to pre-create Streams and Consumers.

@@ -1,3 +1,6 @@
+---
+title: "authorization"
+---
 # Authorization
 
 The NATS server supports authorization using subject-level permissions on a per-user basis. Permission-based authorization is available with multi-user authentication via the `users` list.

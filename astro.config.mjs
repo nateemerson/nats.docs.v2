@@ -16,49 +16,49 @@ export default defineConfig({
 					label: 'Get Started',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Welcome', slug: 'docs/welcome' },
+						{ label: 'Welcome', slug: 'welcome' },
 					],
 				},
 				{
 					label: 'Configure',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'JetStream', slug: 'docs/welcome', items: [ { label: 'Streams', slug: 'docs/welcome'} ] },
+						{ label: 'JetStream', slug: 'welcome', items: [ { label: 'Streams', slug: 'welcome'} ] },
 					],
 				},
 				{
 					label: 'Secure',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Welcome', slug: 'docs/welcome' },
+						{ label: 'Welcome', slug: 'welcome' },
 					],
 				},
 				{
 					label: 'Deploy',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Welcome', slug: 'docs/welcome' },
+						{ label: 'Welcome', slug: 'welcome' },
 					],
 				},
 				{
 					label: 'Monitor',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Welcome', slug: 'docs/welcome' },
+						{ label: 'Welcome', slug: 'welcome' },
 					],
 				},
 				{
 					label: 'Operate',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Welcome', slug: 'docs/welcome' },
+						{ label: 'Welcome', slug: 'welcome' },
 					],
 				},
 				{
 					label: 'Develop',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Welcome', slug: 'docs/welcome' },
+						{ label: 'Welcome', slug: 'welcome' },
 					],
 				},
 			],

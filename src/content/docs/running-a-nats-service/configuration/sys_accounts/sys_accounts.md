@@ -1,3 +1,6 @@
+---
+title: "sys_accounts"
+---
 # System Events & Decentralized JWT Tutorial
 
 ## Enabling System Events with Decentralized Authentication/Authorization

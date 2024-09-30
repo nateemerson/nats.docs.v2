@@ -1,3 +1,6 @@
+---
+title: "streams"
+---
 # Streams
 
 The first step is to set up storage for our `ORDERS` related messages, these arrive on a wildcard of subjects all flowing into the same Stream and they are kept for 1 year.

@@ -1,3 +1,6 @@
+---
+title: "endpoints"
+---
 # Endpoints
 
 The following sections describe each supported monitoring endpoint: serverz, storez, clientsz, and channelsz.

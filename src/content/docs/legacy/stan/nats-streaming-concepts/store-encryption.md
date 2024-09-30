@@ -1,3 +1,6 @@
+---
+title: "store-encryption"
+---
 # Store Encryption
 
 The server can be configured to encrypt a message's payload when storing them, providing encryption at rest. This can be done from the command line or from the configuration file. Check `encrypt` and `encryption_key` in the [Configuring](store-encryption.md#configuring) section.

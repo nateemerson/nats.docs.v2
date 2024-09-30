@@ -1,3 +1,6 @@
+---
+title: "building_the_book"
+---
 # Building the Book
 
 Before doing anything else, install the legacy command line for gitbook:

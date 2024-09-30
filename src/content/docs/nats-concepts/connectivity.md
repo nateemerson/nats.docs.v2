@@ -1,3 +1,6 @@
+---
+title: "connectivity"
+---
 # NATS connectivity
 
 NATS supports several kinds of connectivity _directly_ to the NATS servers.

@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Clustering
 
 ## NATS Server Clustering

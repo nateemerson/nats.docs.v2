@@ -1,3 +1,6 @@
+---
+title: "cluster"
+---
 # Connecting to a Cluster
 
 When connecting to a cluster, there are a few things to think about.

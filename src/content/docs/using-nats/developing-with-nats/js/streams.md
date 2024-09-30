@@ -1,3 +1,6 @@
+---
+title: "streams"
+---
 # Managing Streams and consumers
 
 Streams and durable consumers can be defined administratively outside the application (typically using the NATS CLI Tool) in which case the application only needs to know about the well-known names of the durable consumers it wants to use. But you can also manage streams and consumers programmatically.

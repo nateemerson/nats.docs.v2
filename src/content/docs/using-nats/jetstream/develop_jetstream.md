@@ -1,3 +1,6 @@
+---
+title: "develop_jetstream"
+---
 # Developing with JetStream
 
 ## Deciding to use streaming and higher qualities of service

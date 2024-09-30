@@ -1,3 +1,6 @@
+---
+title: "administration"
+---
 # Administration
 
 Once a JetStream cluster is operating interactions with the CLI and with `nats` CLI is the same as before. For these examples, lets assume we have a 5 server cluster, n1-n5 in a cluster named C1.

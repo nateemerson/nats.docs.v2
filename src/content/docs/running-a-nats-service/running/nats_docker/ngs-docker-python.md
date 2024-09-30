@@ -1,3 +1,6 @@
+---
+title: "ngs-docker-python"
+---
 # Python and NGS Running in Docker
 
 Start a lightweight Docker container:

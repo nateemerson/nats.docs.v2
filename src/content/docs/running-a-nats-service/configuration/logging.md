@@ -1,3 +1,6 @@
+---
+title: "logging"
+---
 # Logging
 
 ## Configuring Logging

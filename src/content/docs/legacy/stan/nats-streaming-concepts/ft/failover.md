@@ -1,3 +1,6 @@
+---
+title: "failover"
+---
 # Failover
 
 When the active server fails, all standby servers will try to activate. The process consists of trying to get an exclusive lock on the storage.

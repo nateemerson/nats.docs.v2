@@ -1,3 +1,6 @@
+---
+title: "anatomy"
+---
 # What do you use NATS for?
 
 You can use NATS to exchange information with and make requests to other applications. You can also use NATS to make your application into a distributed peer-to-peer application.

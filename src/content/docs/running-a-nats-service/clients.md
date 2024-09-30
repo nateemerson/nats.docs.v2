@@ -1,3 +1,6 @@
+---
+title: "clients"
+---
 # NATS Server Clients
 
 A NATS client is an application making a connection to one of the nats servers pointed to by its connection URL, and uses a credential file to authenticate and indicate its authorization to the server and the whole NATS infrastructure.

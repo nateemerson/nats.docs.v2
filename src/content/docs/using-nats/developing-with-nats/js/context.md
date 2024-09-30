@@ -1,3 +1,6 @@
+---
+title: "context"
+---
 # JetStream contexts
 You will need the *JetStream context* to make any JetStream enabled operation. Some client libraries (e.g. Java) also have a *JetStream Management context* (which you will only need if your application needs to create/purge/delete/manage streams and consumers), while some client libraries (e.g. Golang) only have the JetStream context that you use for all operations (including stream management).
 

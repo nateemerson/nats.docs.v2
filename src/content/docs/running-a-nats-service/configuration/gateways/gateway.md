@@ -1,3 +1,6 @@
+---
+title: "gateway"
+---
 # Configuration
 
 The `gateway` [configuration block](gateway.md#gateway-configuration-block) is similar to a [`cluster`](../clustering/cluster\_config.md) block:

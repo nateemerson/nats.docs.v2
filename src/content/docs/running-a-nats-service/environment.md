@@ -1,3 +1,6 @@
+---
+title: "environment"
+---
 # Environmental considerations
 
 ## Networking

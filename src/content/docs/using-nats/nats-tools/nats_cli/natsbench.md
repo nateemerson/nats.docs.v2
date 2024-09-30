@@ -1,3 +1,6 @@
+---
+title: "natsbench"
+---
 # nats bench
 
 NATS is fast and lightweight and places a priority on performance. the `nats` CLI tool can, amongst many other things, be used for running benchmarks and measuring performance of your target NATS service infrastructure. In this tutorial you learn how to benchmark and tune NATS on your systems and environment.

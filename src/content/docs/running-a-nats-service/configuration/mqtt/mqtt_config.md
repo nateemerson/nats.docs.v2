@@ -1,5 +1,5 @@
 ---
-description: MQTT Configuration Example
+title: MQTT Configuration Example
 ---
 
 # Configuration

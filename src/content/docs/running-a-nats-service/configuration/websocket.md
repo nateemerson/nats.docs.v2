@@ -1,3 +1,6 @@
+---
+title: "websocket"
+---
 # WebSocket
 
 _Supported since NATS Server version 2.2_

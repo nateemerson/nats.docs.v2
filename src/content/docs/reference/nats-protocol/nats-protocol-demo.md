@@ -1,3 +1,6 @@
+---
+title: "nats-protocol-demo"
+---
 # Protocol Demo
 
 The virtues of the NATS protocol manifest quickly when you experience how easy it is to use NATS. Because the NATS protocol is text-based, you can use NATS across virtually any platform or language.

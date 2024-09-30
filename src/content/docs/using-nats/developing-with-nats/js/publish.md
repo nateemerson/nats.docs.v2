@@ -1,3 +1,6 @@
+---
+title: "publish"
+---
 # Publishing to Streams
 
 {% tabs %}

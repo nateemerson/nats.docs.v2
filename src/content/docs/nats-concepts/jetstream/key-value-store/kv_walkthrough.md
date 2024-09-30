@@ -1,3 +1,6 @@
+---
+title: "kv_walkthrough"
+---
 # Key/Value Store Walkthrough
 
 The Key/Value Store is a JetStream feature, so we need to verify it is enabled by

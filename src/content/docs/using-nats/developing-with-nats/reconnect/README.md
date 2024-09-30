@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Automatic Reconnections
 
 All the client libraries maintained on the [nats.io GitHub page](https://github.com/nats-io) will automatically attempt to re-connect if their current server connection gets disconnected for any reason. Upon re-connection the client library will automatically re-establish all the subscriptions, there is nothing for the application programmer to do.

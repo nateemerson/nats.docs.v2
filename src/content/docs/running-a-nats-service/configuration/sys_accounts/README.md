@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # System Events
 
 NATS servers leverage [Accounts](../securing_nats/accounts.md) support and generate events such as:

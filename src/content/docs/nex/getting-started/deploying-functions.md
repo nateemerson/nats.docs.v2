@@ -1,3 +1,6 @@
+---
+title: "deploying-functions"
+---
 # Deploying Nex Functions
 Deploying functions to Nex is just as easy as deploying services. The pattern is the same for both
 WebAssembly and JavaScript type functions.

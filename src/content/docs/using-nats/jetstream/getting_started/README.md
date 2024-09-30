@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Getting Started
 
 Getting started with JetStream is straightforward. While we speak of JetStream as if it is a separate component, it's actually a subsystem built into the NATS server that needs to be enabled.

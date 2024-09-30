@@ -1,3 +1,6 @@
+---
+title: "installing"
+---
 # Installing Nex
 All of the functionality you need for Nex is conveniently wrapped up in a single command line tool. To install it, enter the following command in a terminal:
 

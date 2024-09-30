@@ -1,3 +1,6 @@
+---
+title: "auto-configuration"
+---
 # Auto Configuration
 
 We can also bootstrap a NATS Streaming cluster by starting **one server** as the seed node using the `-cluster_bootstrap` flag. This node will elect itself leader, **so it's important to avoid starting multiple servers as seed**. Once a seed node is started, other servers will automatically join the cluster. If the server is recovering, it will use the recovered cluster configuration.

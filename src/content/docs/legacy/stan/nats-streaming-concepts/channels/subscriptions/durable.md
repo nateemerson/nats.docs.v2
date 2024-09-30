@@ -1,3 +1,6 @@
+---
+title: "durable"
+---
 # Durable
 
 If an application wishes to resume message consumption from where it previously stopped, it needs to create a durable subscription. It does so by providing a durable name, which is combined with the client ID provided when the client created its connection. The server then maintains the state for this subscription even after the client connection is closed.

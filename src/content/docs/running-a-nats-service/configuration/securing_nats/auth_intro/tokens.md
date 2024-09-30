@@ -1,3 +1,6 @@
+---
+title: "tokens"
+---
 # Tokens
 
 Token authentication is a string that if provided by a client, allows it to connect. It is the most straightforward authentication provided by the NATS server.

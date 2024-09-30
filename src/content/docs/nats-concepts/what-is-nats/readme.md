@@ -1,3 +1,6 @@
+---
+title: "readme"
+---
 # What is NATS
 
 Software applications and services need to exchange data. NATS is an infrastructure that allows such data exchange, segmented in the form of messages. We call this a "**message oriented middleware**".

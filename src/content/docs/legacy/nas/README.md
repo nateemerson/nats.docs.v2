@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # nats-account-server
 
 If you are creating a new NATS deployment we highly recommend using the internal [NATS Resolver](https://docs.nats.io/nats-server/configuration/securing_nats/jwt/resolver#nats-based-resolver) for a much simpler and easy to manage account resolution system.

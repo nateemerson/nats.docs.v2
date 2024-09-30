@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # nsc
 
 NATS account configurations are built using the `nsc` tool. The NSC tool allows you to:

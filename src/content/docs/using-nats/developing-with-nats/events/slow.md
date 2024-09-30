@@ -1,3 +1,6 @@
+---
+title: "slow"
+---
 # Slow Consumers
 
 NATS is designed to move messages through the server quickly. As a result, NATS depends on the applications to consider and respond to changing message rates. The server will do a bit of impedance matching, but if a client is too slow the server will eventually cut them off by closing the connection. These cut off connections are called [_slow consumers_](../../../running-a-nats-service/nats_admin/slow_consumers.md).

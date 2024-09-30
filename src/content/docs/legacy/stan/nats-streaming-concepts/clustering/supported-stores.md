@@ -1,3 +1,6 @@
+---
+title: "supported-stores"
+---
 # Supported Stores
 
 In order to run NATS Streaming Server in clustered mode, you need to specify a persistent store. At this time you have the choice between `FILE` and `SQL`

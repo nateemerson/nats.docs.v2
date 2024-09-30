@@ -1,3 +1,6 @@
+---
+title: "consumers"
+---
 # JetStream Consumers
 
 Consumers are how client applications get the messages stored in the streams. You can have many consumers on a single stream. Consumers are like a view on a stream, can filter messages and have some state (maintained by the servers) associated with them.

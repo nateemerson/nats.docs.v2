@@ -1,3 +1,6 @@
+---
+title: "readme"
+---
 # Getting Started with Nex
 This getting started guide will get you started deploying workloads with the new execution engine. You'll get a taste of all of the basics of Nex, including setup, installation, and developing and deploying both services and functions.
 

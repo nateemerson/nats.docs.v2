@@ -1,3 +1,6 @@
+---
+title: "accounts"
+---
 # Multi Tenancy using Accounts
 
 In modern microservice architecture it is common to share infrastructure - such as NATS - between services. [Accounts](accounts.md#accounts) are securely isolated communication contexts that allow multi-tenancy in a NATS deployment. They allow users to bifurcate technology from business driven use cases, where data silos are created by design, not software limitations. Furthermore, they facilitate the [controlled exchange](accounts.md#exporting-and-importing) of information between those data silos/Tenants/Accounts.

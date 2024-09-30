@@ -1,3 +1,6 @@
+---
+title: "JetStream Model Deep Dive"
+---
 # JetStream Model Deep Dive
 
 ## Stream Limits, Retention, and Policy

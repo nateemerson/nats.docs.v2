@@ -1,3 +1,6 @@
+---
+title: "misc"
+---
 # Miscellaneous functionalities
 
 This section contains miscellaneous functionalities and options for connect.

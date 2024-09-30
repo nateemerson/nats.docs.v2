@@ -1,3 +1,6 @@
+---
+title: "nosandbox"
+---
 # Running workloads without Firecracker
 Firecracker provides Nex operators with the confidence of being able to safely and securely run untrusted workloads. However, when developers are iterating over
 their application code and they want to deploy via Nex during that loop, requiring Firecracker can get in the way. Firecracker will _only_ work on 64-bit

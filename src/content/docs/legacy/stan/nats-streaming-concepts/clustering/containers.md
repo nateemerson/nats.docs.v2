@@ -1,3 +1,6 @@
+---
+title: "containers"
+---
 # Containers
 
 When running the docker image of NATS Streaming Server, you will want to specify a mounted volume so that the data can be recovered. Your `-dir` parameter then points to a directory inside that mounted volume. However, after a restart you may get a failure with a message similar to this:

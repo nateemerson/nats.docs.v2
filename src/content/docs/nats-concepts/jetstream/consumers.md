@@ -1,3 +1,6 @@
+---
+title: "embedding"
+---
 # Consumers
 
 A consumer is a stateful **view** of a stream. It acts as an interface for clients to _consume_ a subset of messages stored in a stream and will keep

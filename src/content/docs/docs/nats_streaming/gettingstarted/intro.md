@@ -1,3 +1,6 @@
+---
+title: "intro"
+---
 # Getting Started
 
 The best way to get the NATS Streaming Server is to use one of the pre-built release binaries which are available for OSX, Linux (x86-64/ARM), Windows.

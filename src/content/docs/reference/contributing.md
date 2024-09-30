@@ -1,3 +1,6 @@
+---
+title: "contributing"
+---
 # Ways to Contribute
 Do you want to contribute to NATS? Awesome! We’d love your help.
 

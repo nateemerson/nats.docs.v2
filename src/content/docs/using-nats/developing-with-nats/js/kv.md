@@ -1,3 +1,6 @@
+---
+title: "kv"
+---
 # Key Value Store
 
 As the Key Value Store is built on top of the JetStream persistence layer you obtain a KeyValueManager object from your JetStream [context](context.md).

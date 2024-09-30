@@ -1,3 +1,6 @@
+---
+title: "auth_timeout"
+---
 # Authentication Timeout
 
 Much like the [`tls timeout` option](/running-a-nats-service/configuration/securing_nats/tls.md#tls-timeout), authentication can specify a `timeout` value.

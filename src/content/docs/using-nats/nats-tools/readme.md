@@ -1,3 +1,6 @@
+---
+title: "readme"
+---
 # NATS Command Line Tooling
 
 ## Using NATS from client application

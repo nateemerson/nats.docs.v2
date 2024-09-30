@@ -1,3 +1,6 @@
+---
+title: "monitoring"
+---
 # Enabling Monitoring
 
 ## NATS Server Monitoring

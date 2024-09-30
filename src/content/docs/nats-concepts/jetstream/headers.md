@@ -1,3 +1,6 @@
+---
+title: "headers"
+---
 # Headers
 
 Message headers are used in a variety of JetStream contexts, such de-duplication, auto-purging of messages, metadata from republished messages, and more.

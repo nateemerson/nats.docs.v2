@@ -1,5 +1,5 @@
 ---
-description: Using JetStream on Leaf Nodes
+title: Using JetStream on Leaf Nodes
 ---
 
 # Leaf Nodes

@@ -1,3 +1,6 @@
+---
+title: "ocsp"
+---
 # OCSP Stapling
 
 _Supported since NATS Server version 2.3_

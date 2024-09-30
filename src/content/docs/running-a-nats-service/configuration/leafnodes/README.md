@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Leaf Nodes
 
 A _Leaf Node_ extends an existing NATS system of any size, optionally bridging both operator and security domains. A leafnode server will transparently route messages as needed from local clients to one or more remote NATS system(s) and vice versa. The leaf node authenticates and authorizes clients using a local policy. Messages are allowed to flow to the cluster or into the leaf node based on leaf node connection permissions of either.

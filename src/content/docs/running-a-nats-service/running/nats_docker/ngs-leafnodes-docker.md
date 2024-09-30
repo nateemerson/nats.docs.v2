@@ -1,3 +1,6 @@
+---
+title: "ngs-leafnodes-docker"
+---
 # Run Synadia Cloud (NGS) leaf nodes in Docker
 
 This mini-tutorial shows how to run 2 NATS server in local Docker containers interconnected via [Synadia Cloud Platform](https://cloud.synadia.com/).

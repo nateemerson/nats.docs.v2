@@ -1,3 +1,6 @@
+---
+title: "custom_dialer"
+---
 # Advanced Connect and Custom Dialer in Go
 
 The Go NATS client features a [CustomDialer](https://godoc.org/github.com/nats-io/go-nats#CustomDialer) option which allows you to customize the connection logic against the NATS server without having to modify the internals of the client. For example, let's say that you want to make the client use the `context` package to use `DialContext` and be able to cancel connecting to NATS altogether with a deadline, you could then do define a Dialer implementation as follows:

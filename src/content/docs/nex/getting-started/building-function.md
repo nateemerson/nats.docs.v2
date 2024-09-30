@@ -1,3 +1,6 @@
+---
+title: "building-function"
+---
 # Building a Nex Function
 Nex functions can be thought of as similar to cloud functions or "lambdas". Nex functions are short-lived and are executed in response to some external trigger. 
 

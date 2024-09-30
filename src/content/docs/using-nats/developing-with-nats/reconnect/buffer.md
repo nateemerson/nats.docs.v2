@@ -1,3 +1,6 @@
+---
+title: "buffer"
+---
 # Buffering Messages During Reconnect Attempts
 
 The Core NATS client libraries try as much as possible to be fire and forget, and you should use JetStream functionalities to get higher qualities of service that can deal with Core NATS messages being dropped due to the server connection being interrupted. That said, one of the features that may be included in the library you are using is the ability to buffer outgoing messages when the connection is down.

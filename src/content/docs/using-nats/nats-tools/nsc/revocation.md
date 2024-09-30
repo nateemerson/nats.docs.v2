@@ -1,3 +1,6 @@
+---
+title: "revocation"
+---
 # Revocation
 
 NATS supports two types of revocations. Both of these are stored in the Account JWT, so that the nats-server can see the revocations and apply them.

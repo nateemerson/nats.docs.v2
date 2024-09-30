@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Configuration
 
 While the NATS server has many flags that allow for simple testing of features from command line. The standard way of configuring the NATS server product is through a configuration file. 

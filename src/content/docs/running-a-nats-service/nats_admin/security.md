@@ -1,3 +1,6 @@
+---
+title: "security"
+---
 # Managing NATS Security
 
 If you are using the [JWT](../configuration/securing\_nats/jwt/) model of authentication to secure your NATS infrastructure or implementing an [Auth callout](../../running-a-nats-service/configuration/securing_nats/auth_callout.md) service, you can administer authentication and authorization without having to change the servers' configuration files.

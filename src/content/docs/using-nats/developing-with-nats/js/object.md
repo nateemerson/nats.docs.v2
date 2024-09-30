@@ -1,3 +1,6 @@
+---
+title: "object"
+---
 # Object Store
 
 The Object Store allows you to store data of any (i.e. large) size by implementing a chunking mechanism, allowing you to for example store and retrieve files (i.e. the object) of any size by associating them with a path and a file name (i.e. the key).

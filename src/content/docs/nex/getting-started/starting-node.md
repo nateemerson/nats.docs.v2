@@ -1,3 +1,6 @@
+---
+title: "starting-node"
+---
 # Starting a Node
 If we've performed our pre-flight checks and they've passed, then starting a Nex node is as easy as pointing the `nex node` command at the checked configuration file.
 

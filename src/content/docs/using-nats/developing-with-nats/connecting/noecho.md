@@ -1,3 +1,6 @@
+---
+title: "noecho"
+---
 # Turning Off Echo'd Messages
 
 By default a NATS connection will echo messages if the connection also has interest in the published subject. This means that if a publisher on a connection sends a message to a subject any subscribers on that same connection will receive the message. Clients can opt to turn off this behavior, such that regardless of interest, the message will not be delivered to subscribers on the same connection.

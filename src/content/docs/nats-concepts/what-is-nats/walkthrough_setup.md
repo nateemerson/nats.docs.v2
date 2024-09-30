@@ -1,3 +1,6 @@
+---
+title: "walkthrough_setup"
+---
 # Walkthrough Setup
 
 We have provided Walkthroughs for you to try NATS (and JetStream) on your own. In order to follow along with the walkthroughs, you could choose one of these options:

@@ -1,3 +1,6 @@
+---
+title: "nats-kubernetes"
+---
 # Introduction
 
 The recommended way to deploy NATS on Kubernetes is using [Helm](https://helm.sh/) with the official NATS Helm Chart.

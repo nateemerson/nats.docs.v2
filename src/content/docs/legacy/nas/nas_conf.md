@@ -1,3 +1,6 @@
+---
+title: "nas_conf"
+---
 # Basics
 
 Basic configuration revolves around 4 settings:

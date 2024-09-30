@@ -1,3 +1,6 @@
+---
+title: "tls_mutual_auth"
+---
 # TLS Authentication
 
 The server can require TLS certificates from a client. When needed, you can use the certificates to:

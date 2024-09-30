@@ -1,3 +1,6 @@
+---
+title: "github_actions"
+---
 # GitHub Actions
 
 We have a pack of GitHub Actions that let you manage an already running JetStream Server, useful for managing releases or standing up test infrastructure.

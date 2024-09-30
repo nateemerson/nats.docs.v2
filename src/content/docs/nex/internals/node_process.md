@@ -1,3 +1,6 @@
+---
+title: "node_process"
+---
 # Nex Node Process
 The Nex node process is the core of the Nex ecosystem. It exposes a control interface API over NATS, through which client applications can deploy and undeploy workloads as well as interrogate the state of nodes and the workloads currently deployed.
 

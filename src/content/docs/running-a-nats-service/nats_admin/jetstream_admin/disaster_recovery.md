@@ -1,3 +1,6 @@
+---
+title: "disaster_recovery"
+---
 # Disaster Recovery
 
 In the event of unrecoverable JetStream message persistence on one (or more) server nodes, there are two recovery scenarios:

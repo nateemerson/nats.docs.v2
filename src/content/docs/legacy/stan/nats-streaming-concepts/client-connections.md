@@ -1,3 +1,6 @@
+---
+title: "client-connections"
+---
 # Client Connections
 
 As described, clients are not directly connected to the streaming server. Instead, they send connection requests. The request includes a `client ID` which is used by the server to uniquely identify, and restrict, a given client. That is, no two connections with the same client ID will be able to run concurrently.

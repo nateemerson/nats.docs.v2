@@ -1,3 +1,6 @@
+---
+title: "source_and_mirror"
+---
 # Source and Mirror
 
 When a stream is configured with a `source` or `mirror`, it will automatically and asynchronously replicate messages from the origin stream. 

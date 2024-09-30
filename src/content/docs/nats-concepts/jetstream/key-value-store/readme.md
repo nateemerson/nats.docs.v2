@@ -1,3 +1,6 @@
+---
+title: "readme"
+---
 # Key/Value store
 
 JetStream, the persistence layer of NATS, not only allows for the higher qualities of service and features associated with 'streaming', but it also enables some functionalities not found in messaging systems.

@@ -1,3 +1,6 @@
+---
+title: "managed"
+---
 # Managed Operators
 
 You can use `nsc` to administer multiple operators. Operators can be thought of as the owners of nats-servers, and fall into two categories: local and managed. The key difference, pardon the pun, is that managed operators are ones which you don't have the nkey for. An example of a managed operator is the Synadia's [NGS](https://synadia.com/ngs).

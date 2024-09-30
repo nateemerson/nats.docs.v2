@@ -1,3 +1,6 @@
+---
+title: "dir_store"
+---
 # Directory Store
 
 ## NATS Account Server Configuration

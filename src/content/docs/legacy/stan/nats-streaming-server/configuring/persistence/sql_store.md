@@ -1,3 +1,6 @@
+---
+title: "sql_store"
+---
 # SQL Store
 
 Using a SQL Database for persistence is another option.

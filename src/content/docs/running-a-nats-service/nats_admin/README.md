@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Managing and Monitoring your NATS Server Infrastructure
 
 Managing a NATS Server is simple, typical lifecycle operations include:

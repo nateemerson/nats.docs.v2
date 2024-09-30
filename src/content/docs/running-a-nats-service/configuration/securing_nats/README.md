@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Securing NATS
 
 The NATS server provides several forms of security:

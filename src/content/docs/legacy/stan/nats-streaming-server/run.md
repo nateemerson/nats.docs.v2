@@ -1,3 +1,6 @@
+---
+title: "run"
+---
 # Running
 
 This tutorial demonstrates NATS Streaming using example [Go NATS Streaming clients](https://github.com/nats-io/stan.go.git).

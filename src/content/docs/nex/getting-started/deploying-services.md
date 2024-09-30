@@ -1,3 +1,6 @@
+---
+title: "deploying-services"
+---
 # Deploying Nex Services
 There are a number of ways to deploy a service with Nex. For this guide we'll cover the easiest option, `devrun`, which makes a number of assumptions about the fact that you're running in a development environment. For all of the full production options, take a look at the reference section or read through the CLI's extended help text.
 

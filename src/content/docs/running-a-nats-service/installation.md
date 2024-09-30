@@ -1,3 +1,6 @@
+---
+title: "installation"
+---
 # Installing a NATS Server
 
 NATS philosophy is simplicity. Installation is just decompressing a zip file and copying the binary to an appropriate directory; you can also use your favorite package manager. Here's a list of different ways you can install or run NATS:

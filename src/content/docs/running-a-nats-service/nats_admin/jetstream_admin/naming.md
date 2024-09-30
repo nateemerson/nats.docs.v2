@@ -1,3 +1,6 @@
+---
+title: "naming"
+---
 # Naming Streams, Consumers, and Accounts
 
 Stream, Consumer (durable name), and Account names are used in both the subject namespace used by JetStream and the filesystem backing JetStream persistence. This means that when naming streams, consumers, and accounts, names must adhere to subject naming rules as well as being friendly to the file system.

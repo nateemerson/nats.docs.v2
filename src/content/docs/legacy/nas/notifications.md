@@ -1,3 +1,6 @@
+---
+title: "notifications"
+---
 # Update Notifications
 
 The `nats-account-server` can notify a nats-server about [JWT](../../running-a-nats-service/configuration/securing_nats/jwt/) updates, enabling the NATS server to update itself to the newly updated JWT.

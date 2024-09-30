@@ -1,3 +1,6 @@
+---
+title: "nats-top-tutorial"
+---
 # Tutorial
 
 You can use [nats-top](https://github.com/nats-io/nats-top) to monitor in realtime NATS server connections and message statistics.

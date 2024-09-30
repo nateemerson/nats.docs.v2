@@ -1,3 +1,6 @@
+---
+title: "nats-server-protocol"
+---
 # NATS Cluster Protocol
 
 ## NATS Cluster Protocol

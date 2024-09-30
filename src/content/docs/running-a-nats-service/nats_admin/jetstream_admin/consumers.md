@@ -1,3 +1,6 @@
+---
+title: "JetStream Consumers"
+---
 # Consumers
 
 Messages are read or consumed from the Stream by Consumers. We support pull and push-based Consumers and the example scenario has both, let's walk through that.

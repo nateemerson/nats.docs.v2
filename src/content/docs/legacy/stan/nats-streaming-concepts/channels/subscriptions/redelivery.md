@@ -1,3 +1,6 @@
+---
+title: "redelivery"
+---
 # Redelivery
 
 When the server sends a message to a consumer, it expects to receive an ACK from this consumer. The consumer is the one specifying how long the server should wait before resending all unacknowledged messages to the consumer.

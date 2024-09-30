@@ -1,3 +1,6 @@
+---
+title: "replication"
+---
 # Data Replication
 
 Replication allows you to move data between streams in either a 1:1 mirror style or by multiplexing multiple source streams into a new stream. In future builds this will allow data to be replicated between accounts as well, ideal for sending data from a Leafnode into a central store.

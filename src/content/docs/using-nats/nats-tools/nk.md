@@ -1,3 +1,6 @@
+---
+title: "nk"
+---
 # nk
 
 `nk` is a command line tool that generates `nkeys`. NKeys are a highly secure public-key signature system based on [Ed25519](https://ed25519.cr.yp.to/).

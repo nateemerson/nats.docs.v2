@@ -1,3 +1,6 @@
+---
+title: "security"
+---
 # Security
 
 NATS has a lot of security features:

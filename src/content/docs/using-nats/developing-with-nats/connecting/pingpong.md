@@ -1,3 +1,6 @@
+---
+title: "pingpong"
+---
 # Ping/Pong Protocol
 
 NATS client applications use a PING/PONG protocol to check that there is a working connection to the NATS service. Periodically the client will send PING messages to the server, which responds with a PONG. This period is configured by specifying a ping interval on the client connection settings.

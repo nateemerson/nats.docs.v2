@@ -1,3 +1,6 @@
+---
+title: "Changes"
+---
 # STAN NATS Streaming Server
 
 ## WARNING Deprecation Notice

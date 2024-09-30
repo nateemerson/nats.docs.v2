@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # MQTT
 
 _Supported since NATS Server version 2.2_

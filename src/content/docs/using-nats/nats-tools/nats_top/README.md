@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # nats-top
 
 [nats-top](https://github.com/nats-io/nats-top) is a [top](http://man7.org/linux/man-pages/man1/top.1.html)-like tool for monitoring nats-server servers.

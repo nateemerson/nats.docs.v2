@@ -1,3 +1,6 @@
+---
+title: "events"
+---
 # Listen for Connection Events
 
 While the connection status is interesting, it is perhaps more interesting to know when the status changes. Most, if not all, of the NATS client libraries provide a way to listen for events related to the connection and its status.

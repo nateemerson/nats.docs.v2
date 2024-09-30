@@ -1,3 +1,6 @@
+---
+title: "subjects"
+---
 # Subject-Based Messaging
 
 NATS is a system for publishing and listening for messages on named communication channels we call `Subjects`. Fundamentally, NATS is an `interest-based` messaging system, where the listener has to `subscribe` to a subset of `subjects`.

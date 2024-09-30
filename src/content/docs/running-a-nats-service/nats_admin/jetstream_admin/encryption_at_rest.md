@@ -1,3 +1,6 @@
+---
+title: "encryption_at_rest"
+---
 # Encryption at Rest
 
 *Supported since NATS server version 2.3.0*

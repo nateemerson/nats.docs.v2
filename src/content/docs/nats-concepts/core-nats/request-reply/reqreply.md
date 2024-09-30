@@ -1,3 +1,6 @@
+---
+title: "reqreply"
+---
 # Request-Reply
 
 Request-Reply is a common pattern in modern distributed systems. A request is sent, and the application either waits on the response with a certain timeout, or receives a response asynchronously.

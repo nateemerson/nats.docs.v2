@@ -1,3 +1,6 @@
+---
+title: "NSC Services"
+---
 # Services
 
 To share services that other accounts can reach via request reply, you have to _Export_ a _Service_. _Services_ are associated with the account performing the replies and are advertised in the exporting accounts' JWT.

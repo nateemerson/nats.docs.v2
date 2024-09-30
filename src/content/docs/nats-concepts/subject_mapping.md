@@ -1,3 +1,6 @@
+---
+title: "subject_mapping"
+---
 # Subject Mapping and Transforms
 
 Subject mapping and transforms is a powerful feature of the NATS server. Transformations (we will use mapping and transform interchangeably) apply to various situations when messages are generated and ingested, acting as translations and in some scenarios as filters. 

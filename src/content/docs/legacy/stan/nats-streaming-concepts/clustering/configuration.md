@@ -1,3 +1,6 @@
+---
+title: "configuration"
+---
 # Configuration
 
 We can bootstrap a NATS Streaming cluster by providing the cluster topology using the `-cluster_peers` flag. This is simply the set of node IDs participating in the cluster. Note that once a leader is established, we can start subsequent servers without providing this configuration as they will automatically join the leader. If the server is recovering, it will use the recovered cluster configuration.

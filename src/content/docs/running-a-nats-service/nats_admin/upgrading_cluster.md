@@ -1,3 +1,6 @@
+---
+title: "upgrading_cluster"
+---
 # Upgrading a Cluster
 
 The basic strategy for upgrading a cluster revolves around the server's ability to gossip cluster configuration to clients and other servers. When cluster configuration changes, clients become aware of new servers automatically. In the case of a disconnect, a client has a list of servers that joined the cluster in addition to the ones it knew about from its connection settings.

@@ -1,3 +1,6 @@
+---
+title: "install"
+---
 # Installing
 
 NATS philosophy is simplicity.

@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Receiving Messages
 
 In general, applications can receive messages asynchronously or synchronously. Receiving messages with NATS can be library dependent.

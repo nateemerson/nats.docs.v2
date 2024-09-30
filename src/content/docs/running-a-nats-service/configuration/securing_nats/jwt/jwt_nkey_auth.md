@@ -1,3 +1,6 @@
+---
+title: "Mixed Authentication/Authorization Setup"
+---
 # Mixed Authentication/Authorization Setup
 
 Mixing both [nkeys](../auth_intro/nkey_auth.md) static config and [decentralized JWT Authentication/Authorization](./) is possible but needs some preparation in order to be able to do it.

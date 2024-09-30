@@ -1,3 +1,6 @@
+---
+title: "Configuration File"
+---
 # Configuration File
 
 You can use a configuration file to configure the options specific to the NATS Streaming Server.

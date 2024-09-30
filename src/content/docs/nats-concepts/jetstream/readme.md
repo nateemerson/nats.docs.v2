@@ -1,3 +1,6 @@
+---
+title: "readme"
+---
 # JetStream
 
 NATS has a built-in persistence engine called [JetStream](../../using-nats/jetstream/develop\_jetstream.md) which enables messages to be stored and replayed at a later time. Unlike _NATS Core_ which requires you to have an active subscription to process messages as they happen, JetStream allows the NATS server to capture messages and replay them to consumers as needed. This functionality enables a different quality of service for your NATS messages, and enables fault-tolerant and high-availability configurations.

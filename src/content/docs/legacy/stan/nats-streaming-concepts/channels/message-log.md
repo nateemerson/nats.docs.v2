@@ -1,3 +1,6 @@
+---
+title: "message-log"
+---
 # Message Log
 
 You can view a message log as a First In First Out \(FIFO\) queue. Messages are appended to the end of the log. If a limit is set globally for all channels, or specifically for this channel, when the limit is reached, older messages are removed to make room for the new ones.

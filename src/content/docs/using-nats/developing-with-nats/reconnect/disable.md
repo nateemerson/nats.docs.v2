@@ -1,3 +1,6 @@
+---
+title: "disable"
+---
 # Disabling Reconnect
 
 You can disable automatic reconnect with connection options:

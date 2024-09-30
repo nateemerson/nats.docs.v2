@@ -1,3 +1,6 @@
+---
+title: "building-service"
+---
 # Building a Nex Service
 Building a service destined for deployment via Nex is just like building any other service. We don't make any demands of your application or its dependencies, only that it meet the sandboxing requirements of the node on which it will run. There's no proprietary SDK, no custom build tools, no complicated dependency tree.
 

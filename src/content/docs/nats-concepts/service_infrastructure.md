@@ -1,3 +1,6 @@
+---
+title: "service_infrastructure"
+---
 # NATS Service Infrastructure
 
 NATS is a client/server system in the fact that you have 'NATS client applications' (applications using one of the NATS client libraries) that connect to 'NATS servers' that provide the NATS service. The NATS servers work together to provide a NATS service infrastructure to their client applications.

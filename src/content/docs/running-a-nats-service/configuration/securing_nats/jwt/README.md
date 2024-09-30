@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Decentralized JWT Authentication/Authorization
 
 With other authentication mechanisms, configuration for identifying a user and [Account](../accounts.md), is in the server configuration file. JWT authentication leverages [JSON Web Tokens \(JWT\)](https://jwt.io/) to describe the various entities supported. When a client connects, servers verify the authenticity of the request using [NKeys](../auth_intro/nkey_auth.md), download account information and validate a trust chain. Users are not directly tracked by the server, but rather verified as and belonging to an [Account](../accounts.md). This enables the management of users, without requiring server configuration updates.

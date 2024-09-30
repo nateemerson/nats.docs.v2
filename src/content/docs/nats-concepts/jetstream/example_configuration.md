@@ -1,3 +1,6 @@
+---
+title: "example_configuration"
+---
 # Example
 
 Consider this architecture

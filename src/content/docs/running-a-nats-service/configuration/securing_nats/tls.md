@@ -1,3 +1,6 @@
+---
+title: "tls"
+---
 # Enabling TLS
 
 The NATS server uses modern TLS semantics to encrypt client, route, and monitoring connections. Server configuration revolves around a `tls` map, which has the following properties:

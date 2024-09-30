@@ -1,3 +1,6 @@
+---
+title: "nats-client-dev"
+---
 # Developing a Client
 
 ## NATS Client Development Guide

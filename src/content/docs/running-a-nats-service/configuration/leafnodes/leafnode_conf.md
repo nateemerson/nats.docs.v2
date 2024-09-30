@@ -1,3 +1,6 @@
+---
+title: "leafnode_conf"
+---
 # Configuration
 
 ## `leafnodes` Configuration Block

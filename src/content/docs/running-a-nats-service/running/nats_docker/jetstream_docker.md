@@ -1,3 +1,6 @@
+---
+title: "jetstream_docker"
+---
 # Run JetStream in Docker
 
 This mini-tutorial shows how to run a NATS server with JetStream enabled in a local Docker container.

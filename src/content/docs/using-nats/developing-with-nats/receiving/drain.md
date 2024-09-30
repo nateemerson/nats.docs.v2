@@ -1,3 +1,6 @@
+---
+title: "drain"
+---
 # Draining Messages Before Disconnect
 
 This feature is the ability to drain connections or subscriptions and then close the connection. Closing a connection (using `close()`), or unsubscribing from a subscription, are generally considered immediate requests. When you close or unsubscribe the library will halt messages in any pending queue or cache for subscribers. When you drain a subscription or connection, it will process any inflight and cached/pending messages before closing.

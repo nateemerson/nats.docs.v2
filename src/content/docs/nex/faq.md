@@ -1,3 +1,6 @@
+---
+title: "faq"
+---
 # Nex FAQ
 Frequently Asked Questions about the NATS Execution Engine
 

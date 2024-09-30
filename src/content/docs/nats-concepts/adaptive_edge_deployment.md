@@ -1,3 +1,6 @@
+---
+title: "adaptive_edge_deployment"
+---
 # NATS Adaptive Deployment Architectures
 
 From a single process to a global super-cluster with leaf node servers, you can always adapt your NATS service deployment to your needs. From servers and VPCs in many clouds, to partially connected small edge devices and everything in between, you can always easily extend and scale your NATS service as your needs grow.

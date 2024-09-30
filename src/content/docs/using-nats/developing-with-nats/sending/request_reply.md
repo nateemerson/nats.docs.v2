@@ -1,3 +1,6 @@
+---
+title: "request_reply"
+---
 # Request-Reply Semantics
 
 The pattern of sending a message and receiving a response is encapsulated in most client libraries into a request method. Under the covers this method will publish a message with a unique reply-to subject and wait for the response before returning.

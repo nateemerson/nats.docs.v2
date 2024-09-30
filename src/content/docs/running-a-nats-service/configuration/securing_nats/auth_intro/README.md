@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Authentication
 
 NATS authentication is multi-level. All of the security modes have an [_accounts_](../../../../running-a-nats-service/configuration/securing_nats/auth_intro) level with [_users_](./#user-configuration-map) belonging to those accounts. The decentralized JWT Authentication also has an _operator_ to which the accounts belong.

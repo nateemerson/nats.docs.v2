@@ -1,3 +1,6 @@
+---
+title: "signing_keys"
+---
 # Signing Keys
 
 As previously discussed, NKEYs are identities, and if someone gets a hold of an account or operator nkey they can do everything you can do as you.

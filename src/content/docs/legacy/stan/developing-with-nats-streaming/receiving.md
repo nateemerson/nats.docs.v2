@@ -1,3 +1,6 @@
+---
+title: "receiving"
+---
 # Receiving Messages from a Channel
 
 Clients subscribe to channels by name. Wildcards are not supported. Receiving messages is similar to core NATS. Messages in streaming use protocol buffers and will have a bit more structure than NATS opaque messages. Client messages are still presented and accepted as raw/opaque binary data. The use of protocol buffers is transparent.

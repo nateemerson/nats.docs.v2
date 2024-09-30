@@ -1,3 +1,6 @@
+---
+title: "process-signaling"
+---
 # Process Signaling
 
 On Unix systems, the NATS Streaming Server responds to the following signals:

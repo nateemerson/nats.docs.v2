@@ -1,3 +1,6 @@
+---
+title: "publishing"
+---
 # Publishing to a Channel
 
 The streaming client library can provide a method for publishing synchronously. These publish methods block until the ACK is returned by the server. An error or exception is used to indicate a timeout or other error.

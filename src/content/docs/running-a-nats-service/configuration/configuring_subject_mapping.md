@@ -1,3 +1,6 @@
+---
+title: "configuring_subject_mapping"
+---
 # Subject Mapping and Traffic Shaping
 
 _Supported since NATS Server version 2.2_

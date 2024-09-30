@@ -1,3 +1,6 @@
+---
+title: "source_and_mirror_example"
+---
 # Source and Mirror configuration example
 
 Streams with source and mirror configurations are best managed through a client API. If you intend to create such a configuration from command line with NATS CLI you should use a JSON configuration. 

@@ -1,3 +1,6 @@
+---
+title: "resolver"
+---
 # Account lookup using Resolver
 
 The `resolver` configuration option is used in conjunction with [NATS JWT Authentication](./) and [nsc](../../../../using-nats/nats-tools/nsc/). The `resolver` option specifies a URL where the nats-server can retrieve an account JWT. There are 3 resolver implementations:

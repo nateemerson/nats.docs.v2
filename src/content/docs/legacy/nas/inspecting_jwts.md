@@ -1,3 +1,6 @@
+---
+title: "inspecting_jwts"
+---
 # Inspecting JWTs
 
 Let’s say that you know the account for a stream that you are interested in, but you don't know all the details for creating an import. If you know and have access to a nats-account-server, you can help yourself. The nats-account-server can decode a JWT and give you human readable values that you can use.

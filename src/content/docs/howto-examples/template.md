@@ -1,3 +1,6 @@
+---
+title: "template"
+---
 # Template
 ## Pre-conditions
 Expected knowledge and tools to run this example. Only `nats-server` and `nats` are implied.

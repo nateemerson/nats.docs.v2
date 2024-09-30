@@ -1,3 +1,6 @@
+---
+title: "specific_server"
+---
 # Connecting to a Specific Server
 
 The NATS client libraries can take a full URL, `nats://demo.nats.io:4222`, to specify a specific server host and port to connect to.

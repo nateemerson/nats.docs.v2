@@ -1,3 +1,6 @@
+---
+title: "token"
+---
 # Authenticating with a Token
 
 Tokens are basically random strings, much like a password, and can provide a simple authentication mechanism in some situations. However, tokens are only as safe as they are secret so other authentication schemes can provide more security in large installations. It is highly recommended to use one of the other NATS authentication mechanisms.

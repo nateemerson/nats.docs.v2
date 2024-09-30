@@ -1,3 +1,6 @@
+---
+title: "embedding"
+---
 # Embedding NATS Streaming Server
 
 Embedding a NATS Streaming Server in your own code is easy. Simply import:

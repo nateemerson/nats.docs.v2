@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # JetStream Clustering
 
 Clustering in JetStream is required for a highly available and scalable system. Behind clustering is RAFT. There's no need to understand RAFT in depth to use clustering, but knowing a little explains some of the requirements behind setting up JetStream clusters.

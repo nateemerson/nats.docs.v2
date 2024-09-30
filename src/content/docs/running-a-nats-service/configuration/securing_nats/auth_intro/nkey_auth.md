@@ -1,3 +1,6 @@
+---
+title: "nkey_auth"
+---
 # NKeys
 
 NKeys are a new, highly secure public-key signature system based on [Ed25519](https://ed25519.cr.yp.to/).

@@ -1,3 +1,6 @@
+---
+title: "readme"
+---
 # nats
 
 A command line utility to interact with and manage NATS.

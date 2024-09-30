@@ -1,3 +1,6 @@
+---
+title: "partitioning"
+---
 # Partitioning
 
 _**Note, this feature is incompatible with Clustering mode. Trying to start a server with Partitioning and Clustering enabled will result in a startup error.**_

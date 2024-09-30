@@ -1,3 +1,6 @@
+---
+title: "mqtt_conf"
+---
 # Configuration
 
 To enable MQTT support in the server, add a `mqtt` configuration

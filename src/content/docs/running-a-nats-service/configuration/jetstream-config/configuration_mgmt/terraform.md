@@ -1,3 +1,6 @@
+---
+title: "terraform"
+---
 # Terraform
 
 [Terraform](https://www.terraform.io/) is a Cloud configuration tool from Hashicorp. We maintain a Provider for Terraform called [terraform-provider-jetstream](https://github.com/nats-io/terraform-provider-jetstream/) that can maintain JetStream using Terraform.

@@ -1,3 +1,6 @@
+---
+title: "NATS Streaming Cluster with FT Mode"
+---
 # NATS Streaming Cluster with FT Mode
 
 ## NATS Streaming Cluster with FT Mode on AWS

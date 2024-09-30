@@ -1,3 +1,6 @@
+---
+title: "obj_walkthrough"
+---
 # Object Store Walkthrough
 
 If you are running a local `nats-server` stop it and restart it with JetStream enabled using `nats-server -js` (if that's not already done)

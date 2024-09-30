@@ -1,3 +1,6 @@
+---
+title: "storelimits"
+---
 # Store Limits
 
 The `store_limits` section in the configuration file \(or the command line parameters `-mc`, `-mm`, etc..\) allow you to configure the global limits.

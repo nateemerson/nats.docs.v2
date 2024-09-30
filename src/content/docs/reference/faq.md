@@ -1,3 +1,6 @@
+---
+title: "faq"
+---
 # FAQ
 
 ### General

@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Fault Tolerance
 
 To minimize the single point of failure, NATS Streaming server can be run in Fault Tolerance mode. It works by having a group of servers with one acting as the active server \(accessing the store\) and handling all communication with clients, and all others acting as standby servers.

@@ -1,3 +1,6 @@
+---
+title: "cmdline"
+---
 # Command Line Arguments
 
 The NATS Streaming Server accepts command line arguments to control its behavior. There is a set of parameters specific to the NATS Streaming Server and some to the embedded NATS Server.

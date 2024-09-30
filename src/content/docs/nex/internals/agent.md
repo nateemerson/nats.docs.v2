@@ -1,3 +1,6 @@
+---
+title: "agent"
+---
 # Nex Agent
 
 The **Nex Agent** is responsible for managing _only one_ workload. Through the agent's API, the node can request that a workload be deployed, undeployed, or (for functions) triggered.

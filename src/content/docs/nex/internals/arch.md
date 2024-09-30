@@ -1,3 +1,6 @@
+---
+title: "arch"
+---
 # Architecture Overview
 
 While the vast majority of the functionality of Nex can be found inside the single `nex` binary, Nex is actually a suite of tools and components that all collaborate to give you the power to deploy and manage workloads using your existing NATS infrastructure.

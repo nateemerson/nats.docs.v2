@@ -1,3 +1,6 @@
+---
+title: "cluster_config"
+---
 # Clustering Configuration
 
 The [`cluster` configuration map](../../configuration/README.md#clustering) has the following configuration options:

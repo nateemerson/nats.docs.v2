@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Administration & Usage from CLI
 
 Once the server is running it's time to use the management tool. This can be downloaded from the [GitHub Release Page](https://github.com/nats-io/natscli/releases/). On OS X homebrew can be used to install the latest version:

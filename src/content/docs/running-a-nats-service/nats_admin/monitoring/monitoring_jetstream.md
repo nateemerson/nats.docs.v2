@@ -1,3 +1,6 @@
+---
+title: "monitoring_jetstream"
+---
 # Monitoring
 
 ## Server Metrics

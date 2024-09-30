@@ -1,3 +1,6 @@
+---
+title: "caches"
+---
 # Caches, Flush and Ping
 
 For performance reasons, most if not all, of the client libraries will buffer outgoing data so that bigger chunks can be written to the network at one time. This may be as simple as a byte buffer that stores a few messages before being pushed to the network.

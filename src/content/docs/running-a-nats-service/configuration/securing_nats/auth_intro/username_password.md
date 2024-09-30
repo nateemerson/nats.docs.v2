@@ -1,3 +1,6 @@
+---
+title: "username_password"
+---
 # Username/Password
 
 ## Plain Text Passwords

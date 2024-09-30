@@ -1,3 +1,6 @@
+---
+title: "rootfs"
+---
 # Root File System
 The root file system used by Nex in its spawned Firecracker virtual machines is an ext4 (64-bit file system) [block device](https://linux-kernel-labs.github.io/refs/heads/master/labs/block_device_drivers.html). In oversimplified terms, it's basically a single file that represents an entire file system.
 

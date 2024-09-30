@@ -1,3 +1,6 @@
+---
+title: "unsub_after"
+---
 # Unsubscribing After N Messages
 
 NATS provides a special form of unsubscribe that is configured with a message count and takes effect when that many messages are sent to a subscriber. This mechanism is very useful if only a single message is expected.

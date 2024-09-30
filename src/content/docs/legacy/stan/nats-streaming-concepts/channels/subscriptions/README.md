@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Subscriptions
 
 A client creates a subscription on a given channel. Remember, there is no support for wildcards, so a subscription is really tied to one and only one channel. The server will maintain the subscription state on behalf of the client until the latter closes the subscription \(or its connection\).

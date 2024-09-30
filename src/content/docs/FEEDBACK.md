@@ -1,3 +1,6 @@
+---
+title: "FEEDBACK"
+---
 # Feedback page
 
 This is the place to provide feedback, comment, suggest, discuss, etc... it doesn't appear in the docs and is only for reviewers/contributors.

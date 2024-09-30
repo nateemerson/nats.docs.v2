@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Clustering
 
 NATS Streaming Server supports clustering and data replication, implemented with the [Raft consensus algorithm](https://raft.github.io/), for the purposes of high availability. It provides protection for some of the nodes in the cluster failing, but since the leader is handling all incoming data from publishers and outgoing data to subscribers, it is not horizontally scalable. The cluster size should probably be limited to 3 to 5 nodes \(RAFT recommends an odd number of nodes\).

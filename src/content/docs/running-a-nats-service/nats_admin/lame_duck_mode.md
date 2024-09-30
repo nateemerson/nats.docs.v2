@@ -1,3 +1,6 @@
+---
+title: "lame_duck_mode"
+---
 # Lame Duck Mode
 
 In production we recommend that a server is shut down with ​lame duck mode​ as a graceful way to slowly evict clients. With large deployments this mitigates the "thundering herd" situation that will place CPU pressure on servers as TLS enabled clients reconnect.

@@ -1,3 +1,6 @@
+---
+title: "resource_management"
+---
 # Configuring JetStream
 
 ## Enabling JetStream for a nats-server

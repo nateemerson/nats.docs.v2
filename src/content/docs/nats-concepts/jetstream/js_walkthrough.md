@@ -1,3 +1,6 @@
+---
+title: "js_walkthrough"
+---
 # NATS JetStream Walkthrough
 
 The following is a small walkthrough on creating a stream and a consumer and interacting with the stream using the [nats cli](https://github.com/nats-io/natscli).

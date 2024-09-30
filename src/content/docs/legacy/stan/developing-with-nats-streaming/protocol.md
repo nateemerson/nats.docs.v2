@@ -1,3 +1,6 @@
+---
+title: "protocol"
+---
 # The Streaming Protocol
 
 You can find a list of all supported client libraries [here](https://nats.io/download/). There are also links to community contributed clients.

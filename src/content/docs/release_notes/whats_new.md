@@ -1,3 +1,6 @@
+---
+title: "whats_new"
+---
 # What's New!
 
 The NATS.io team is always working to bring you features to improve your NATS experience. Below you will find feature summaries for new NATS implementations. Check back often for release highlights and updates.

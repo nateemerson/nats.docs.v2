@@ -1,3 +1,6 @@
+---
+title: "nats-admin-cli"
+---
 # NATS Admin CLI
 
 ## nats Admin CLI

@@ -1,3 +1,6 @@
+---
+title: "Authenticating with a Credentials File"
+---
 # Authenticating with a Credentials File
 
 The 2.0 version of NATS server introduced the idea of decentralized authentication based on [JSON Web Tokens \(JWT\)](https://jwt.io/). Clients interact with this new scheme using a [user JWT](/running-a-nats-service/nats_admin/security.md) and corresponding [NKey](/running-a-nats-service/configuration/securing_nats/auth_intro/nkey_auth.md) private key. To help make connecting with a JWT easier, the client libraries support the concept of a credentials file. This file contains both the private key and the JWT and can be generated with the `nsc` [tool](../../../nats-tools/nsc/). The contents will look like the following and should be protected because it contains a private key. This credentials file is unused and only for example purposes.

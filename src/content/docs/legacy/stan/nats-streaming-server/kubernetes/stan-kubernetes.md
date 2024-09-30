@@ -1,3 +1,6 @@
+---
+title: "stan-kubernetes"
+---
 # STAN on Kubernetes
 
 ## Minimal STAN Setup

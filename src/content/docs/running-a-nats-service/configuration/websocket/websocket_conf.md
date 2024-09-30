@@ -1,5 +1,5 @@
 ---
-description: WebSocket Configuration Example
+title: WebSocket Configuration Example
 ---
 
 # Configuration

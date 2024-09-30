@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # STAN
 
 ## WARNING Deprecation Notice

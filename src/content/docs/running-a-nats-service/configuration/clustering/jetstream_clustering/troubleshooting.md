@@ -1,3 +1,6 @@
+---
+title: "troubleshooting"
+---
 # Troubleshooting
 
 Diagnosing problems in NATS JetStream clusters requires:

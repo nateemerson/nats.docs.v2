@@ -1,5 +1,5 @@
 ---
-description: 'NATS Comparison to Kafka, Rabbit, gRPC, and others'
+title: 'NATS Comparison to Kafka, Rabbit, gRPC, and others'
 ---
 
 # Compare NATS

@@ -1,3 +1,6 @@
+---
+title: "queues"
+---
 # Queue Subscriptions
 
 Queue subscriptions are created like other subscriptions with the addition of a queue name.

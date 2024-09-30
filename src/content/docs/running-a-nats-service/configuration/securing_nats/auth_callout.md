@@ -1,3 +1,6 @@
+---
+title: "auth_callout"
+---
 # Auth Callout
 
 _As of NATS v2.10.0_

@@ -1,3 +1,6 @@
+---
+title: "file_store"
+---
 # File Store
 
 For a higher level of message delivery, the server should be configured with a file store. NATS Streaming Server comes with a basic file store implementation. Various file store implementations may be added in the future.

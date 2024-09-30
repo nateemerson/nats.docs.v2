@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # JetStream Concepts
 
 ## Functionalities enabled by JetStream

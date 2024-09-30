@@ -1,3 +1,6 @@
+---
+title: "unsubscribing"
+---
 # Unsubscribing
 
 The client libraries provide a means to unsubscribe a previous subscription request.

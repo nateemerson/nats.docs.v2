@@ -1,3 +1,6 @@
+---
+title: "README"
+---
 # Channels
 
 Channels are at the heart of the NATS Streaming Server. Channels are subjects clients send data to and consume from.

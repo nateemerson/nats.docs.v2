@@ -1,3 +1,6 @@
+---
+title: "v2_routes"
+---
 # v2 Routes
 
 _Introduced in NATS v2.10.0_

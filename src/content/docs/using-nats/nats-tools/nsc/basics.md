@@ -1,3 +1,6 @@
+---
+title: "NSC Basics"
+---
 # Basics
 
 NSC allows you to manage identities. Identities take the form of _nkeys_. Nkeys are a public-key signature system based on Ed25519 for the NATS ecosystem.

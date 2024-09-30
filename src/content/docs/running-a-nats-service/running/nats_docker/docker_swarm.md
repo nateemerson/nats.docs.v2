@@ -1,3 +1,6 @@
+---
+title: "docker_swarm"
+---
 # Docker Swarm
 
 ### Step 1:

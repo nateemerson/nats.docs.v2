@@ -1,3 +1,6 @@
+---
+title: "queues_walkthrough"
+---
 # NATS Queueing Walkthrough
 
 NATS supports a form of load balancing using [queue groups](queue.md). Subscribers register a queue group name. A single subscriber in the group is randomly selected to receive the message.

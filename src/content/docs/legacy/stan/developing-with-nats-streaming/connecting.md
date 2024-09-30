@@ -1,3 +1,6 @@
+---
+title: "connecting"
+---
 # Connecting to NATS Streaming
 
 First, it is recommended to understand the relation between Streaming and core NATS. You should familiarize yourself with the [concept](../nats-streaming-concepts/relation-to-nats.md).

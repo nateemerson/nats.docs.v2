@@ -1,3 +1,6 @@
+---
+title: "NSC Streams"
+---
 # Streams
 
 To share messages you publish with other accounts, you have to _Export_ a _Stream_. _Exports_ are associated with the account performing the export and advertised in exporting account’s JWT.
