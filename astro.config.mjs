@@ -6,21 +6,60 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'NATS.io Docs V2',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/nats-io/nats.docs',
+        twitter: 'https://x.com/nats_io'
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Get Started',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Welcome', slug: 'docs/welcome' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Configure',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'JetStream', slug: 'docs/welcome', items: [ { label: 'Streams', slug: 'docs/welcome'} ] },
+					],
+				},
+				{
+					label: 'Secure',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Welcome', slug: 'docs/welcome' },
+					],
+				},
+				{
+					label: 'Deploy',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Welcome', slug: 'docs/welcome' },
+					],
+				},
+				{
+					label: 'Monitor',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Welcome', slug: 'docs/welcome' },
+					],
+				},
+				{
+					label: 'Operate',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Welcome', slug: 'docs/welcome' },
+					],
+				},
+				{
+					label: 'Develop',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Welcome', slug: 'docs/welcome' },
+					],
 				},
 			],
 		}),
