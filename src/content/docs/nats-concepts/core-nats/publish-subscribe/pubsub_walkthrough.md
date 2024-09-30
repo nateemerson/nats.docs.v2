@@ -7,7 +7,7 @@ NATS is a [publish subscribe](pubsub) messaging system [based on subjects](../..
   
 This simple walkthrough demonstrates some ways in which subscribers listen on subjects, and publishers send messages on specific subjects.  
   
-![](../../../.gitbook/assets/pubsubtut.svg)
+![](../../../../../assets/.gitbook/assets/pubsubtut.svg)
 
 ## Walkthrough prerequisites
 

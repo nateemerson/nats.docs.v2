@@ -5,7 +5,7 @@ title: "example_configuration"
 
 Consider this architecture
 
-![Orders](<../../.gitbook/assets/streams-and-consumers-75p (1).png>)
+![Orders](<../../../../assets/.gitbook/assets/streams-and-consumers-75p (1).png>)
 
 While it is an incomplete architecture it does show a number of key points:
 

@@ -20,7 +20,7 @@ Through subject-based addressing, NATS provides location transparency across a (
 * Messages will be automatically routed to all interested subscribers, independent of location.
 * Messages with no subscribers to their subject are automatically discarded (Please see the [JetStream](jetstream/readme) feature for message persistence).
 
-![](../.gitbook/assets/subjects1.svg)
+![](../../../assets/.gitbook/assets/subjects1.svg)
 
 ## Wildcards
 
@@ -97,13 +97,13 @@ orders.online.us.server42.ccpayment.premium.store123.electronics.deliver-dhl.ord
 The first wildcard is `*` which will match a single token. For example, if an application wanted to listen for eastern time zones, they could subscribe to `time.*.east`, which would match `time.us.east` and `time.eu.east`.
 Note that `*` can not match a substring within a token `time.New*.east`.
 
-![](../.gitbook/assets/subjects2.svg)
+![](../../../assets/.gitbook/assets/subjects2.svg)
 
 ### Matching multiple tokens
 
 The second wildcard is `>` which will match one or more tokens, and can only appear at the end of the subject. For example, `time.us.>` will match `time.us.east` and `time.us.east.atlanta`, while `time.us.*` would only match `time.us.east` since it can't match more than one token.
 
-![](../.gitbook/assets/subjects3.svg)
+![](../../../assets/.gitbook/assets/subjects3.svg)
 
 ### Monitoring and wire taps
 

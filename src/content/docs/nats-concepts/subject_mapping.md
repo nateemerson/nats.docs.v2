@@ -401,4 +401,4 @@ For `sources` and `republish` transforms the `src` expression will act as a filt
 For the stream level `subject_transform` non-matching subjects will stay untouched.
 {% endhint %}
 
-![](../assets/images/stream-transform.png)
+![](../../../assets/stream-transform.png)
