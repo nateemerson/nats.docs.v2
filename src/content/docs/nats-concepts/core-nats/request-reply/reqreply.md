@@ -19,7 +19,7 @@ The increased complexity of modern systems necessitates features like [location 
 
 ![](../../../.gitbook/assets/reqrepl.svg)
 
-Try NATS request-reply on your own, using a live server by walking through the [request-reply walkthrough.](reqreply\_walkthrough.md)
+Try NATS request-reply on your own, using a live server by walking through the [request-reply walkthrough.](reqreply\_walkthrough)
 
 ### No responders
 

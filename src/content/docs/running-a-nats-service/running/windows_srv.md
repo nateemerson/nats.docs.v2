@@ -29,7 +29,7 @@ The above commands will default to controlling the `nats-server` service. If the
 nats-server.exe --signal stop=<service name>
 ```
 
-For a complete list of signals, see [process signaling](../nats_admin/signals.md).
+For a complete list of signals, see [process signaling](../nats_admin/signals).
 
 ## Permissions
 The default user in the above example will be `System`, which has local administrator permissions and write access to almost all files on disk. 

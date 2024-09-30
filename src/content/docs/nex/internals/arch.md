@@ -41,10 +41,10 @@ Unless you're running in a test or development environment, the connections used
 
 There are a number of key Nex components contained in the preceding diagram, and each is discussed in detail in this section.
 
-* [Node Process](node\_process.md)
-* [Nex Agent](agent.md)
-* [Root File System](rootfs.md)
-* [Control Interface](control\_interface.md)
+* [Node Process](node\_process)
+* [Nex Agent](agent)
+* [Root File System](rootfs)
+* [Control Interface](control\_interface)
 
 ## Internal (Hidden) NATS
 

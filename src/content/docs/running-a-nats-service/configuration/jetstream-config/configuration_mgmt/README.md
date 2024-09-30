@@ -7,8 +7,8 @@ In many cases managing the configuration in your application code is the best mo
 
 We support a number of tools to assist with this:
 
-* [CLI with Configuration Files](nats-admin-cli.md)
-* [Terraform](terraform.md)
-* [GitHub Actions](github_actions.md)
-* [Kubernetes JetStream Controller](kubernetes_controller.md) 
+* [CLI with Configuration Files](nats-admin-cli)
+* [Terraform](terraform)
+* [GitHub Actions](github_actions)
+* [Kubernetes JetStream Controller](kubernetes_controller) 
 

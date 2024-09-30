@@ -69,7 +69,7 @@ Apart from using [NATS streaming](broken-reference) or optimizing your consuming
 
 **Scaling with queue subscribers**
 
-This is ideal if you do not rely on message order. Ensure your NATS subscription belongs to a [queue group](../../nats-concepts/core-nats/queue-groups/queue.md), then scale as required by creating more instances of your service or application. This is a great approach for microservices - each instance of your microservice will receive a portion of the messages to process, and simply add more instances of your service to scale. No code changes, configuration changes, or downtime whatsoever.
+This is ideal if you do not rely on message order. Ensure your NATS subscription belongs to a [queue group](../../nats-concepts/core-nats/queue-groups/queue), then scale as required by creating more instances of your service or application. This is a great approach for microservices - each instance of your microservice will receive a portion of the messages to process, and simply add more instances of your service to scale. No code changes, configuration changes, or downtime whatsoever.
 
 **Create a subject namespace that can scale**
 

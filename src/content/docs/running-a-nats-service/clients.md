@@ -7,7 +7,7 @@ A NATS client is an application making a connection to one of the nats servers p
 
 The nats-server doesn't come bundled with any clients, but its companion is the [`nats`](../using-nats/nats-tools/nats\_cli/) CLI tool that you should install (even if you don't intend to run your own servers) as it is the best tool to use to test, monitor, manage and generally interact with a NATS infrastructure (regardless of that infrastructure being an isolated local server, a leaf node server, a cluster or even a global super-cluster).
 
-Other NATS client tools to know about are the [`nsc`](../using-nats/nats-tools/nsc/) CLI tool (to manage accounts attributes and user JWT tokens) and the ['nk'](../using-nats/nats-tools/nk.md) tool (and library) to manage Nkeys.
+Other NATS client tools to know about are the [`nsc`](../using-nats/nats-tools/nsc/) CLI tool (to manage accounts attributes and user JWT tokens) and the ['nk'](../using-nats/nats-tools/nk) tool (and library) to manage Nkeys.
 
 Also, most client libraries come with sample programs that allow you to publish, subscribe, send requests and reply messages.
 
@@ -101,7 +101,7 @@ nats-server -V
 
 If you had created a subscriber, you should notice output on the subscriber telling you that it disconnected, and reconnected. The server output above is more interesting. You can see the subscriber send a `CONNECT` protocol message and a `PING` which was responded to by the server with a `PONG`.
 
-> You can learn more about the [NATS protocol here](../reference-protocols.md), but more interesting than the protocol description is [an interactive demo](../reference/nats-protocol/nats-protocol-demo.md).
+> You can learn more about the [NATS protocol here](../reference-protocols), but more interesting than the protocol description is [an interactive demo](../reference/nats-protocol/nats-protocol-demo).
 
 On a third terminal, publish your first message:
 

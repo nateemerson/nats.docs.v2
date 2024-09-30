@@ -3,7 +3,7 @@ title: "readme"
 ---
 # JetStream
 
-NATS has a built-in persistence engine called [JetStream](../../using-nats/jetstream/develop\_jetstream.md) which enables messages to be stored and replayed at a later time. Unlike _NATS Core_ which requires you to have an active subscription to process messages as they happen, JetStream allows the NATS server to capture messages and replay them to consumers as needed. This functionality enables a different quality of service for your NATS messages, and enables fault-tolerant and high-availability configurations.
+NATS has a built-in persistence engine called [JetStream](../../using-nats/jetstream/develop\_jetstream) which enables messages to be stored and replayed at a later time. Unlike _NATS Core_ which requires you to have an active subscription to process messages as they happen, JetStream allows the NATS server to capture messages and replay them to consumers as needed. This functionality enables a different quality of service for your NATS messages, and enables fault-tolerant and high-availability configurations.
 
 JetStream is built into `nats-server`. If you have a cluster of JetStream-enabled servers you can enable data replication and thus guard against failures and service disruptions.
 
@@ -22,7 +22,7 @@ Key/Value and File transfer are capabilities are commonly found in in-memory dat
 
 To configure a `nats-server` with JetStream refer to:
 
-* [Configuring JetStream](../../running-a-nats-service/configuration/jetstream-config/resource\_management.md)
+* [Configuring JetStream](../../running-a-nats-service/configuration/jetstream-config/resource\_management)
 * [JetStream Clustering](../../running-a-nats-service/configuration/clustering/jetstream\_clustering/)
 
 #### Examples
@@ -113,7 +113,7 @@ For writes (publications to a stream), the formal consistency model of NATS JetS
 
 JetStream can also provide encryption at rest of the messages being stored.
 
-In JetStream the configuration for storing messages is defined separately from how they are consumed. Storage is defined in a [_Stream_](streams.md) and consuming messages is defined by multiple [_Consumers_](consumers.md).
+In JetStream the configuration for storing messages is defined separately from how they are consumed. Storage is defined in a [_Stream_](streams) and consuming messages is defined by multiple [_Consumers_](consumers).
 
 **Stream replication factor**
 
@@ -149,7 +149,7 @@ Therefore, JetStream also offers an '_exactly once_' quality of service. For the
 
 #### Consumers
 
-JetStream [consumers](consumers.md) are 'views' on a stream, they are subscribed to (or pulled) by client applications to receive copies of (or to consume if the stream is set as a working queue) messages stored in the stream.
+JetStream [consumers](consumers) are 'views' on a stream, they are subscribed to (or pulled) by client applications to receive copies of (or to consume if the stream is set as a working queue) messages stored in the stream.
 
 **Fast push consumers**
 
@@ -176,8 +176,8 @@ While you can decide to use un-acknowledged consumers trading quality of service
 The JetStream persistence layer enables the Key Value store: the ability to store, retrieve and delete `value` messages associated with a `key` into a `bucket`.
 
 * [Concepts](key-value-store/)
-* [Walkthrough](key-value-store/kv\_walkthrough.md)
-* [API and details](../../using-nats/developing-with-nats/js/kv.md)
+* [Walkthrough](key-value-store/kv\_walkthrough)
+* [API and details](../../using-nats/developing-with-nats/js/kv)
 
 #### Watch and History
 
@@ -191,9 +191,9 @@ The Key Value store supports atomic `create` and `update` operations. This enabl
 
 The Object Store is similar to the Key Value Store. The key being replaced by a file name and value being designed to store arbitrarily large `objects` (e.g. files, even if they are very large) rather than 'values' that are message-sized (i.e. limited to 1Mb by default). This is achieved by chunking messages.
 
-* [Concepts](object-store/obj\_store.md)
-* [Walkthrough](object-store/obj\_walkthrough.md)
-* [API and details](../../using-nats/developing-with-nats/js/object.md)
+* [Concepts](object-store/obj\_store)
+* [Walkthrough](object-store/obj\_walkthrough)
+* [API and details](../../using-nats/developing-with-nats/js/object)
 
 ## Legacy
 

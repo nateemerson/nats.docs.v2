@@ -13,7 +13,7 @@ Finally, if you want to use TLS for authentication you do not want the load bala
 {% hint style="warning" %}
 If you decide to use load balancers with NATS you need to understand the client and cluster connection and auto-discovery behavior.  
 
-Client connections and routes are permanent. Therefore a load balancer will not distribute messages from one client connections between servers, or worse (which is common when deploying on auto-config environments), you end up with redundant, but disconnected (non-clustered) servers to which the clients will randomly connect. [Advertising needs to be switched off](configuration/clustering/cluster_config.md) or configured to point to the load balancer address through the [`advertise` server config](configuration/clustering/cluster_config.md)  option. 
+Client connections and routes are permanent. Therefore a load balancer will not distribute messages from one client connections between servers, or worse (which is common when deploying on auto-config environments), you end up with redundant, but disconnected (non-clustered) servers to which the clients will randomly connect. [Advertising needs to be switched off](configuration/clustering/cluster_config) or configured to point to the load balancer address through the [`advertise` server config](configuration/clustering/cluster_config)  option. 
 
 Load balancers can also cause issues through improperly configured idle detection, protocol problems due to packet inspection, and ephemeral port problems at high scale.
 

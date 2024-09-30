@@ -69,4 +69,4 @@ nats-server --signal ldm=12*
 
 ## Windows
 
-See the [Windows Service](../running/windows_srv.md) section for information on signaling the NATS server on Windows.
+See the [Windows Service](../running/windows_srv) section for information on signaling the NATS server on Windows.

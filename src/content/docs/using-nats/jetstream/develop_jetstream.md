@@ -76,7 +76,7 @@ Instead, it is better for applications to use the JetStream Publish calls (which
 
 ### Create a consumer
     
-[Consumers](../../nats-concepts/jetstream/consumers.md) are 'views' into a stream, with their own cursor. They are how client applications get messages from a stream (i.e. 'replayed') for processing or consumption. They can filter messages in the stream according to a 'filtering subject' and define which part of the stream is replayed according to a 'replay policy'.
+[Consumers](../../nats-concepts/jetstream/consumers) are 'views' into a stream, with their own cursor. They are how client applications get messages from a stream (i.e. 'replayed') for processing or consumption. They can filter messages in the stream according to a 'filtering subject' and define which part of the stream is replayed according to a 'replay policy'.
 
 You can create *push* or *pull* consumers:
 * *Push* consumers (specifically ordered push consumers) are the best way for an application to receive its own complete copy of the selected messages in the stream.

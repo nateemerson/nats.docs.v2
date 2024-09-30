@@ -61,7 +61,7 @@ Importing a service enables you to send requests to the remote _Account_. To imp
 * You can map the service’s subject to a different subject
 * Self-imports are not valid; you can only import services from other accounts.
 
-To learn how to inspect a JWT from an account server, [check this article](../../../legacy/nas/inspecting_jwts.md).
+To learn how to inspect a JWT from an account server, [check this article](../../../legacy/nas/inspecting_jwts).
 
 First let's create a second account to import the service into:
 

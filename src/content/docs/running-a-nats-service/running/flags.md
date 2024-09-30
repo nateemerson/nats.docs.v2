@@ -25,7 +25,7 @@ The configuration flags revolve around:
 | `-m`, `--http_port`   | HTTP port for monitoring dashboard (exclusive of `--https_port`).                      |
 | `-ms`, `--https_port` | HTTPS port monitoring for monitoring dashboard (exclusive of `--http_port`).           |
 | `-c`, `--config`      | Path to NATS server configuration file.                                                |
-| `-sl`, `--signal`     | Send a signal to nats-server process. See [process signaling](../nats_admin/signals.md). |
+| `-sl`, `--signal`     | Send a signal to nats-server process. See [process signaling](../nats_admin/signals). |
 | `--client_advertise`  | Client HostPort to advertise to other servers.                                         |
 | `-t`                  | Test configuration and exit                                                            |
 | `--ports_file_dir     | Creates a ports file in the specified directory (<executable_name>_<pid>.ports).       |
@@ -47,7 +47,7 @@ The following options control straightforward authentication:
 | `--pass` | Required _password_ for connections (exclusive of `--auth`).                             |
 | `--auth` | Required _authorization token_ for connections (exclusive of `--user` and `--password`). |
 
-See [token authentication](../configuration/securing_nats/auth_intro/tokens.md), and [username/password](../configuration/securing_nats/auth_intro/username_password.md) for more information.
+See [token authentication](../configuration/securing_nats/auth_intro/tokens), and [username/password](../configuration/securing_nats/auth_intro/username_password) for more information.
 
 ## Logging Options
 
@@ -67,7 +67,7 @@ The following flags are available on the server to configure logging:
 | `--max_traced_msg_len`  | Maximum printable length for traced messages. 0 for unlimited |
 | `--max_traced_msg_len   | Maximum printable length for traced messages (default: unlimited) |
 
-You can read more about [logging configuration here](../configuration/logging.md).
+You can read more about [logging configuration here](../configuration/logging).
 
 ## TLS Options
 
@@ -79,7 +79,7 @@ You can read more about [logging configuration here](../configuration/logging.md
 | `--tlsverify` | Enable client TLS certificate verification |
 | `--tlscacert` | Client certificate CA for verification     |
 
-You can read more about [tls configuration here](/running-a-nats-service/configuration/securing_nats/tls.md).
+You can read more about [tls configuration here](/running-a-nats-service/configuration/securing_nats/tls).
 
 ## Cluster Options
 
@@ -95,7 +95,7 @@ The following flags are available on the server to configure clustering:
 | `--cluster_listen`    | Cluster url from which members can solicit routes           |
 
 
-You can read more about [clustering configuration here](/running-a-nats-service/configuration/clustering/README.md).
+You can read more about [clustering configuration here](/running-a-nats-service/configuration/clustering/README).
 
 ## Common Options
 

@@ -122,7 +122,7 @@ Note that it's common practice for non-web protocols to use the `TLS WWW` authen
 
 ### Creating Self Signed Certificates for Testing
 
-The simplest way to generate a CA as well as client and server certificates is [mkcert](https://github.com/FiloSottile/mkcert). This zero config tool generates and installs the CA into your **local** system trust store\(s\) and makes providing SAN straight forward. Check its [documentation](https://github.com/FiloSottile/mkcert/blob/master/README.md) for installation and your system's trust store. Here is a simple example:
+The simplest way to generate a CA as well as client and server certificates is [mkcert](https://github.com/FiloSottile/mkcert). This zero config tool generates and installs the CA into your **local** system trust store\(s\) and makes providing SAN straight forward. Check its [documentation](https://github.com/FiloSottile/mkcert/blob/master/README) for installation and your system's trust store. Here is a simple example:
 
 Generate a CA as well as a certificate, valid for server authentication by `localhost` and the IP `::1`\(`-cert-file` and `-key-file` overwrite default file names\). Then start a NATS server using the generated certificate.
 

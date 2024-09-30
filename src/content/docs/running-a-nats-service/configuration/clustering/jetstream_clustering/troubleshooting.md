@@ -19,7 +19,7 @@ The following tips and commands (while not an exhaustive list) can be useful whe
 
 | Command                                                                 | Description                                 |
 | ----------------------------------------------------------------------- | ------------------------------------------- |
-| [`nats account info`](../../../nats\_admin/jetstream\_admin/account.md) | Verify that JetStream is enabled on account |
+| [`nats account info`](../../../nats\_admin/jetstream\_admin/account) | Verify that JetStream is enabled on account |
 
 ### Basic `nats server` commands
 

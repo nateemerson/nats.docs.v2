@@ -13,8 +13,8 @@ A subscription can be created to start at any point in the message log, either b
 
 The following pages describe all of the types of subscriptions.
 
-* [Regular](regular.md)
-* [Durable](durable.md)
-* [Queue Group](queue-group.md)
-* [Redelivery](redelivery.md)
+* [Regular](regular)
+* [Durable](durable)
+* [Queue Group](queue-group)
+* [Redelivery](redelivery)
 

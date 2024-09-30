@@ -11,27 +11,27 @@ Each account has its own independent subject namespace: a message published on s
 
 The NATS server provides various ways of authenticating clients:
 
-- [Token Authentication](tokens.md)
+- [Token Authentication](tokens)
 - [Plain Text Username/Password credentials](username_password.md#plain-text-passwords)
 - [Bcrypted Username/Password credentials](username_password.md#bcrypted-passwords)
-- [TLS Certificate](tls_mutual_auth.md)
-- [NKEY with Challenge](nkey_auth.md)
+- [TLS Certificate](tls_mutual_auth)
+- [NKEY with Challenge](nkey_auth)
 - [Decentralized JWT Authentication/Authorization](../jwt/)
 
-Authentication deals with allowing a NATS client to connect to the server. Except for JWT authentication, authentication and authorization are configured in the `authorization` section of the configuration. With JWT authentication the account and user information are stored in the [resolver](../jwt/resolver.md) rather than in the server configuration file.
+Authentication deals with allowing a NATS client to connect to the server. Except for JWT authentication, authentication and authorization are configured in the `authorization` section of the configuration. With JWT authentication the account and user information are stored in the [resolver](../jwt/resolver) rather than in the server configuration file.
 
 ## Authorization Map
 
-The `authorization` block provides _authentication_ configuration as well as [_authorization_](../authorization.md):
+The `authorization` block provides _authentication_ configuration as well as [_authorization_](../authorization):
 
 | Property                                       | Description                                                                                                                           |
 | :--------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
-| [`token`](tokens.md)                           | Specifies a global token that can be used to authenticate to the server \(exclusive of user and password\)                            |
+| [`token`](tokens)                           | Specifies a global token that can be used to authenticate to the server \(exclusive of user and password\)                            |
 | [`user`](username_password.md#single-user)     | Specifies a single _global_ user name for clients to the server \(exclusive of token\)                                                |
-| [`password`](username_password.md)             | Specifies a single _global_ password for clients to the server \(exclusive of `token`\)                                               |
+| [`password`](username_password)             | Specifies a single _global_ password for clients to the server \(exclusive of `token`\)                                               |
 | [`users`](username_password.md#multiple-users) | A list of [user configuration](#user-configuration-map) maps. For multiple username and password credentials, specify a `users` list. |
-| [`timeout`](auth_timeout.md)                   | Maximum number of seconds to wait for client authentication                                                                           |
-| [`auth_callout`](../auth_callout.md)           | Enables the auth callout extension                                                                                                    |
+| [`timeout`](auth_timeout)                   | Maximum number of seconds to wait for client authentication                                                                           |
+| [`auth_callout`](../auth_callout)           | Enables the auth callout extension                                                                                                    |
 
 ## User Configuration Map
 
@@ -39,7 +39,7 @@ A `user` configuration map specifies credentials and permissions options for a s
 
 | Property                             | Description                                                                                                                                   |
 | :----------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`user`](username_password.md)       | username for client authentication. \(Can also be a user for [tls authentication](tls_mutual_auth.md#mapping-client-certificates-to-a-user)\) |
-| [`password`](username_password.md)   | password for the user entry                                                                                                                   |
-| [`nkey`](nkey_auth.md)               | public nkey identifying an user                                                                                                               |
-| [`permissions`](../authorization.md) | permissions map configuring subjects accessible to the user                                                                                   |
+| [`user`](username_password)       | username for client authentication. \(Can also be a user for [tls authentication](tls_mutual_auth.md#mapping-client-certificates-to-a-user)\) |
+| [`password`](username_password)   | password for the user entry                                                                                                                   |
+| [`nkey`](nkey_auth)               | public nkey identifying an user                                                                                                               |
+| [`permissions`](../authorization) | permissions map configuring subjects accessible to the user                                                                                   |

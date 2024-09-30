@@ -52,7 +52,7 @@ Below are explicitly listed server configuration for a three-node cluster across
 
 ### Server password configuration
 
-A user and password under the [system account ($SYS)](../../sys\_accounts/#system-account) should be configured. The following configuration uses a [bcrypted password](../../securing\_nats/auth\_intro/username\_password.md): `a very long s3cr3t! password`.
+A user and password under the [system account ($SYS)](../../sys\_accounts/#system-account) should be configured. The following configuration uses a [bcrypted password](../../securing\_nats/auth\_intro/username\_password): `a very long s3cr3t! password`.
 
 ### Server 1 (host\_a)
 

@@ -20,7 +20,7 @@ title: "faq"
 * [Does NATS do queuing? Does NATS do load balancing?](faq.md#does-nats-do-queuing-does-nats-do-load-balancing)
 * [Can I list the subjects that exist in my NATS cluster?](faq.md#can-i-list-the-subjects-that-exist-in-my-nats-cluster)
 * [Does NATS support subject wildcards?](faq.md#does-nats-support-subject-wildcards)
-* [What is the right kind of Stream consumer to use?](faq.md)
+* [What is the right kind of Stream consumer to use?](faq)
 * [What do ‘verbose’ and ‘pedantic’ mean when using CONNECT?](faq.md#what-do-verbose-and-pedantic-mean-when-using-connect)
 * [Does NATS offer any guarantee of message ordering?](faq.md#does-nats-offer-any-guarantee-of-message-ordering)
 * [Is there a message size limitation in NATS?](faq.md#is-there-a-message-size-limitation-in-nats)
@@ -40,7 +40,7 @@ NATS is an open source, lightweight, high-performance cloud native infrastructur
 NATS is offered in two interoperable modules in a single "NATS Server" binary (often referred to as `nats-server` throughout this site):
 
 * 'Core NATS' is the set of core NATS functionalities and qualities of service.
-* ['JetStream'](../using-nats/jetstream/develop\_jetstream.md) is the (optionally enabled) built-in persistence layer that adds streaming, at-least-once and exactly-once guarantees, historical data replay, decoupled flow-control and key/value store functionalities to Core NATS.
+* ['JetStream'](../using-nats/jetstream/develop\_jetstream) is the (optionally enabled) built-in persistence layer that adds streaming, at-least-once and exactly-once guarantees, historical data replay, decoupled flow-control and key/value store functionalities to Core NATS.
 
 NATS was created by Derek Collison, who has over 25 years of experience designing, building, and using publish-subscribe messaging systems. NATS is maintained by an amazing Open Source Ecosystem, find more at [GitHub](https://www.github.com/nats-io).
 
@@ -50,11 +50,11 @@ NATS stands for Neural Autonomic Transport System. Derek Collison conceived NATS
 
 ### JetStream and NATS Streaming?
 
-As of NATS Server 2.2, NATS [JetStream](../using-nats/jetstream/develop\_jetstream.md) is the recommended option for persistence, streaming and higher message guarantees. [NATS Streaming](https://github.com/nats-io/nats-streaming-server) a.k.a. 'STAN' is now considered legacy: click [here](broken-reference) the deprecation notice.
+As of NATS Server 2.2, NATS [JetStream](../using-nats/jetstream/develop\_jetstream) is the recommended option for persistence, streaming and higher message guarantees. [NATS Streaming](https://github.com/nats-io/nats-streaming-server) a.k.a. 'STAN' is now considered legacy: click [here](broken-reference) the deprecation notice.
 
 ### What language is NATS written in?
 
-The NATS server (`nats-server`) is written in Go. There is client support for a wide variety of languages. Please see the Please see the [Developing with NATS](../using-nats/developing-with-nats/developer.md) page for more info.
+The NATS server (`nats-server`) is written in Go. There is client support for a wide variety of languages. Please see the Please see the [Developing with NATS](../using-nats/developing-with-nats/developer) page for more info.
 
 ### Who maintains NATS?
 
@@ -62,7 +62,7 @@ NATS is maintained by a select group of Maintainers following a Governance proce
 
 ### What client support exists for NATS?
 
-Please see the [Developing with NATS](../using-nats/developing-with-nats/developer.md) page for the latest list of Synadia and Community maintained NATS clients.
+Please see the [Developing with NATS](../using-nats/developing-with-nats/developer) page for the latest list of Synadia and Community maintained NATS clients.
 
 ## Technical Questions
 
@@ -85,7 +85,7 @@ NATS can be deployed to have an HTTP(s) monitoring port - see the demo server he
 * [natsboard](https://github.com/cmfatih/natsboard) A monitoring tool developed by Fatih Cetinkaya.
 * [nats-mon](https://github.com/repejota/nats-mon) A monitoring tool developed by Raül Pérez and Adrià Cidre.
 
-A more detailed overview of monitoring is available under [NATS Server Monitoring](../running-a-nats-service/configuration/monitoring.md).
+A more detailed overview of monitoring is available under [NATS Server Monitoring](../running-a-nats-service/configuration/monitoring).
 
 ### Does NATS do queuing? Does NATS do load balancing?
 
@@ -97,7 +97,7 @@ This form of distributed queueing is done in real time, and messages are not per
 
 NATS maintains and constantly updates the interest graph (subjects and their subscribers) in real time. Do not think of it as a "directory" that is aggregated over time. The interest graph is dynamic, and will change constantly as publishers and subscribers come and go.
 
-If you are determined to gather this information, it can be indirectly derived at any instant in time by polling the monitoring endpoint for /connz and /routez. See [Server Monitoring](../running-a-nats-service/configuration/monitoring.md) for more information.
+If you are determined to gather this information, it can be indirectly derived at any instant in time by polling the monitoring endpoint for /connz and /routez. See [Server Monitoring](../running-a-nats-service/configuration/monitoring) for more information.
 
 ### Does NATS support subject wildcards?
 
@@ -141,11 +141,11 @@ No. As of `nats-server` v0.8.0, there is no hard limit on the maximum number of 
 
 Core NATS, offers "at-most-once" delivery. This means messages are guaranteed to arrive intact, in order from a given publisher, but not across different publishers. NATS does everything required to remain available and provide a dial-tone. However, if a subscriber is problematic or goes offline it will not receive messages, as the basic NATS platform is a simple pub-sub transport system that offers only TCP reliability.
 
-As of NATS Server 2.2, NATS JetStream offers persistence with "at-least-once" and "exactly-once" (within a time window) delivery. See the [JetStream](../using-nats/jetstream/develop\_jetstream.md) documentation for detailed information.
+As of NATS Server 2.2, NATS JetStream offers persistence with "at-least-once" and "exactly-once" (within a time window) delivery. See the [JetStream](../using-nats/jetstream/develop\_jetstream) documentation for detailed information.
 
 ### Does NATS support replay/redelivery of historical data?
 
-NATS [JetStream](../using-nats/jetstream/develop\_jetstream.md) offers message store and replay by time or sequence.
+NATS [JetStream](../using-nats/jetstream/develop\_jetstream) offers message store and replay by time or sequence.
 
 ### How do I gracefully shut down an asynchronous subscriber?
 

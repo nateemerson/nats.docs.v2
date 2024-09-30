@@ -11,7 +11,7 @@ It is also used to resolve the issue of not having direct client connections to 
 
 ## Note - Important Things to Know About Reconnections
 
-A common misunderstanding from users moving from NATS to NATS Streaming has to do with how reconnection works. It is important to understand how NATS Streaming relates to NATS "core". You can find some information in [NATS Streaming Concepts/Relation to NATS](relation-to-nats.md).
+A common misunderstanding from users moving from NATS to NATS Streaming has to do with how reconnection works. It is important to understand how NATS Streaming relates to NATS "core". You can find some information in [NATS Streaming Concepts/Relation to NATS](relation-to-nats).
 
 The NATS Streaming library uses the NATS library to connect to a NATS Server and indirectly communicates with the NATS Streaming "server". To better understand the issues, you should assume that the server has no direct connection with the client, and the client may possibly never lose its TCP connection to a NATS Server and yet may not have access to a streaming server \(streaming client connected to a NATS Server, that is cluster to another, to which the NATS Streaming "server" is connected to\).
 

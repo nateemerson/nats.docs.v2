@@ -3,7 +3,7 @@ title: "kv"
 ---
 # Key Value Store
 
-As the Key Value Store is built on top of the JetStream persistence layer you obtain a KeyValueManager object from your JetStream [context](context.md).
+As the Key Value Store is built on top of the JetStream persistence layer you obtain a KeyValueManager object from your JetStream [context](context).
 
 The key must be in the same format as a NATS subject, i.e. it can be a dot separated list of tokens (which means that you can then use wildcards to match hierarchies of keys when watching a bucket), and can only contain [valid characters](../../../nats-concepts/subjects.md#characters-allowed-for-subject-names). The value can be any byte array.
 

@@ -3,7 +3,7 @@ title: "connecting"
 ---
 # Connecting to NATS Streaming
 
-First, it is recommended to understand the relation between Streaming and core NATS. You should familiarize yourself with the [concept](../nats-streaming-concepts/relation-to-nats.md).
+First, it is recommended to understand the relation between Streaming and core NATS. You should familiarize yourself with the [concept](../nats-streaming-concepts/relation-to-nats).
 
 NATS Streaming is a service on top of NATS. To connect to the service you first connect to NATS and then use the client library to communicate with the server over your NATS connection. Most of the libraries provide a convenience mechanism for connecting in a single step. These convenience methods will take some NATS options, like the cluster ID, and perform the NATS connection first, then run the protocol to connect to the streaming server.
 

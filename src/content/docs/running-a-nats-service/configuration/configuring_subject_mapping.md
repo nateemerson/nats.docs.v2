@@ -106,7 +106,7 @@ Update the configuration file to redirect some portion of the requests made to `
   ]
 ```
 
-You can [reload](../nats_admin/signals.md) the server at this point to make the changes with zero downtime. After reloading, 2% of your requests will be serviced by the new version.
+You can [reload](../nats_admin/signals) the server at this point to make the changes with zero downtime. After reloading, 2% of your requests will be serviced by the new version.
 
 Once you've determined Version 2 stable switch 100% of the traffic over and reload the server with a new configuration.
 

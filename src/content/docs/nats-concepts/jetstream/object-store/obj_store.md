@@ -9,8 +9,8 @@ One such feature is the Object store functionality, which allows client applicat
 
 **Note:**  Object store is not a distributed storage system. All files in a bucket will need to fit on the target file system.
 
-* [Walkthrough](obj_walkthrough.md)
-* [Details](../../../using-nats/developing-with-nats/js/object.md)
+* [Walkthrough](obj_walkthrough)
+* [Details](../../../using-nats/developing-with-nats/js/object)
 
 ## Basic Capabilities
 

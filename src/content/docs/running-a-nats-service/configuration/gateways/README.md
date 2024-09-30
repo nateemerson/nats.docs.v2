@@ -85,5 +85,5 @@ Queue subscriptions work on _Interest-only Mode_ to honor NATS' queue semantics 
 
 ### Gateway Configuration
 
-The [Gateway Configuration](gateway.md) document describes all the options available to gateways.
+The [Gateway Configuration](gateway) document describes all the options available to gateways.
 

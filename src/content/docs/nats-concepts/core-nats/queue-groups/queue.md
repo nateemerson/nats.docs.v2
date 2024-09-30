@@ -17,7 +17,7 @@ As an example, consider message delivery occurring in the 1:N pattern to all sub
 * No extra configuration required
 * Queue groups are defined by the application and their queue subscribers, rather than the server configuration
 
-Queue group names follow the same naming rules as [subjects](../../subjects.md). Foremost, they are case sensitive and cannot contain whitespace. Consider structuring queue groups hierarchically using a period `.`. Some server functionalities can use [wildcard matching](../../subjects.md#wildcards) on them.
+Queue group names follow the same naming rules as [subjects](../../subjects). Foremost, they are case sensitive and cannot contain whitespace. Consider structuring queue groups hierarchically using a period `.`. Some server functionalities can use [wildcard matching](../../subjects.md#wildcards) on them.
 
 Queue subscribers are ideal for scaling services. Scale up is as simple as running another application, scale down is terminating the application with a signal that drains the in flight requests. This flexibility and lack of any configuration changes makes NATS an excellent service communication technology that can work with all platform technologies.
 
@@ -27,7 +27,7 @@ When a request is made to a service (request/reply) and the NATS Server knows th
 
 ## Stream as a queue
 
-With [JetStream](../../jetstream/) a stream can also be used as a queue by setting the retention policy to `WorkQueuePolicy` and leveraging [`pull` consumers](../../jetstream/consumers.md) to get easy horizontal scalability of the processing (or using an explicit ack push consumer with a queue group of subscribers).
+With [JetStream](../../jetstream/) a stream can also be used as a queue by setting the retention policy to `WorkQueuePolicy` and leveraging [`pull` consumers](../../jetstream/consumers) to get easy horizontal scalability of the processing (or using an explicit ack push consumer with a queue group of subscribers).
 
 ![](../../../.gitbook/assets/queue.svg)
 
@@ -37,4 +37,4 @@ When connecting to a globally distributed NATS super-cluster, there is an automa
 
 ### Tutorial
 
-Try NATS queue subscriptions on your own, using a live server by walking through the [queueing walkthrough](queues\_walkthrough.md).
+Try NATS queue subscriptions on your own, using a live server by walking through the [queueing walkthrough](queues\_walkthrough).

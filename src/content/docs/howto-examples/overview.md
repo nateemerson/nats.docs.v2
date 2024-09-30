@@ -8,7 +8,7 @@ The main audience for these examples are Dev-Ops, operations, and architects. We
 
 Redundancy is good. Many examples here can be found elsewhere. We copy shamelessly. 
 
-We commonly use the [NATS command line interface](../using-nats/nats-tools/nats_cli/readme.md) (NATS CLI), which you can [download here](https://github.com/nats-io/natscli/releases).
+We commonly use the [NATS command line interface](../using-nats/nats-tools/nats_cli/readme) (NATS CLI), which you can [download here](https://github.com/nats-io/natscli/releases).
 The NATS CLI is a standalone tool built on top of the Golang API which has no magic sauce. Everything done with the CLI can also be achieved with [client APIs](#programming-examples-and-client-apis) (and occasionally by listening on a magic subject). 
 
 Examples will be roughly classified as:

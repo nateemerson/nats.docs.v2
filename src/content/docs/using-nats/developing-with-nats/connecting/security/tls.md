@@ -3,7 +3,7 @@ title: "tls"
 ---
 # Encrypting Connections with TLS
 
-While authentication limits which clients can connect, TLS can be used to encrypt traffic between client/server and check the server’s identity. Additionally - in the most secure version of TLS with NATS - the server can be configured to verify the client's identity, thus authenticating it. When started in [TLS mode](../../../../running-a-nats-service/configuration/securing_nats/tls.md), a `nats-server` will require all clients to connect with TLS. Moreover, if configured to connect with TLS, client libraries will fail to connect to a server without TLS.
+While authentication limits which clients can connect, TLS can be used to encrypt traffic between client/server and check the server’s identity. Additionally - in the most secure version of TLS with NATS - the server can be configured to verify the client's identity, thus authenticating it. When started in [TLS mode](../../../../running-a-nats-service/configuration/securing_nats/tls), a `nats-server` will require all clients to connect with TLS. Moreover, if configured to connect with TLS, client libraries will fail to connect to a server without TLS.
 
 ## Connecting with TLS and verify client identity
 

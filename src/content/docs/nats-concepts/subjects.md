@@ -5,7 +5,7 @@ title: "subjects"
 
 NATS is a system for publishing and listening for messages on named communication channels we call `Subjects`. Fundamentally, NATS is an `interest-based` messaging system, where the listener has to `subscribe` to a subset of `subjects`.
 
-In other middleware systems subjects may be called `topics`, `channels`, `streams` (Note that in NATS the term `stream` is used for a [JetStream](jetstream/readme.md) message storage).
+In other middleware systems subjects may be called `topics`, `channels`, `streams` (Note that in NATS the term `stream` is used for a [JetStream](jetstream/readme) message storage).
 
 **What is a subject?**
 At its simplest, a subject is just a string of characters that form a name the publisher and subscriber can use to find each other. More commonly [subject hierarchies](#subject-hierarchies) are used to scope messages into semantic namespaces.
@@ -18,7 +18,7 @@ Please check the [constraint and conventions](#characters-allowed-and-recommende
 Through subject-based addressing, NATS provides location transparency across a (large) cloud of routed NATS servers.
 * Subject subscriptions are automatically propagated within the server cloud.
 * Messages will be automatically routed to all interested subscribers, independent of location.
-* Messages with no subscribers to their subject are automatically discarded (Please see the [JetStream](jetstream/readme.md) feature for message persistence).
+* Messages with no subscribers to their subject are automatically discarded (Please see the [JetStream](jetstream/readme) feature for message persistence).
 
 ![](../.gitbook/assets/subjects1.svg)
 

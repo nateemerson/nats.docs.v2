@@ -9,7 +9,7 @@ With NKeys the server can verify identities without ever storing or ever seeing 
 
 > NKey is an excellent replacement for token authentication because a connecting client will have to prove it controls the private key for the authorized public key.
 
-To generate nkeys, you'll need the [`nk` tool](../../../../using-nats/nats-tools/nk.md).
+To generate nkeys, you'll need the [`nk` tool](../../../../using-nats/nats-tools/nk).
 
 ## Generating NKeys and Configuring the Server
 
@@ -41,7 +41,7 @@ Note that the user section sets the `nkey` property \(user/password/token proper
 
 ## Client Configuration
 
-Now that you have a user nkey, let's configure a [client](../../../../using-nats/developing-with-nats/connecting/security/nkey.md) to use it for authentication. As an example, here are the connect options for the node client:
+Now that you have a user nkey, let's configure a [client](../../../../using-nats/developing-with-nats/connecting/security/nkey) to use it for authentication. As an example, here are the connect options for the node client:
 
 ```javascript
 const NATS = require('nats');

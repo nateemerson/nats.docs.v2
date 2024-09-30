@@ -84,5 +84,5 @@ Use the `q` command to quit nats-top.
 
 ### Tutorial
 
-For a walkthrough with `nats-top` check out the [tutorial](nats-top-tutorial.md).
+For a walkthrough with `nats-top` check out the [tutorial](nats-top-tutorial).
 

@@ -7,8 +7,8 @@ JetStream, the persistence layer of NATS, not only allows for the higher qualiti
 
 One such feature is the Key/Value store functionality, which allows client applications to create `buckets` and use them as immediately (as opposed to eventually) consistent, persistent [associative arrays](https://en.wikipedia.org/wiki/Associative_array) (or maps).
 
-* [Walkthrough](kv_walkthrough.md)
-* [Details](../../../using-nats/developing-with-nats/js/kv.md)
+* [Walkthrough](kv_walkthrough)
+* [Details](../../../using-nats/developing-with-nats/js/kv)
 
 ## Managing a Key Value store
 1. Create a bucket, which corresponds to a stream in the underlying storage. Define KV/Stream limits as appropriate
@@ -44,4 +44,4 @@ Finally, you can even do things that typically can not be done with a Key/Value 
 
 ## Notes
 
-The key conforms to the same [naming restriction as a NATS subject](../../subjects.md), i.e. it can be a dot-separated list of tokens (which means that you can then use wildcards to match hierarchies of keys when watching a bucket), and can only contain [valid characters](../../../nats-concepts/subjects.md#characters-allowed-for-subject-names). The value can be any byte array
+The key conforms to the same [naming restriction as a NATS subject](../../subjects), i.e. it can be a dot-separated list of tokens (which means that you can then use wildcards to match hierarchies of keys when watching a bucket), and can only contain [valid characters](../../../nats-concepts/subjects.md#characters-allowed-for-subject-names). The value can be any byte array

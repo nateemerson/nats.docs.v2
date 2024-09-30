@@ -99,7 +99,7 @@ There are new stream and consumer configuration options that could be problemati
 
 ### Authn/Authz
 
-* A pluggable server extension, referred to as [auth callout](../running-a-nats-service/configuration/securing\_nats/auth\_callout.md), has been added. This provides a mechanism for delegating authentication checks against a bring-your-own (BYO) provider and, optionally, dynamically declaring permissions for the authenticated user.
+* A pluggable server extension, referred to as [auth callout](../running-a-nats-service/configuration/securing\_nats/auth\_callout), has been added. This provides a mechanism for delegating authentication checks against a bring-your-own (BYO) provider and, optionally, dynamically declaring permissions for the authenticated user.
 
 ### Monitoring
 
@@ -113,11 +113,11 @@ There are new stream and consumer configuration options that could be problemati
 
 ### MQTT
 
-* Support for [QoS2](../running-a-nats-service/configuration/mqtt/) has been added. Check out the new [MQTT implementation details](https://github.com/nats-io/nats-server/blob/main/server/README-MQTT.md) overview.
+* Support for [QoS2](../running-a-nats-service/configuration/mqtt/) has been added. Check out the new [MQTT implementation details](https://github.com/nats-io/nats-server/blob/main/server/README-MQTT) overview.
 
 ### Clustering
 
-* When defining routes between servers, a handful of optimizations have been introduced including a pool of TCP connections between servers, optional pinning of accounts to connections, and optional compression of traffic. There is quite a bit to dig into, so check out the [v2 routes](../running-a-nats-service/configuration/clustering/v2\_routes.md) page for details.
+* When defining routes between servers, a handful of optimizations have been introduced including a pool of TCP connections between servers, optional pinning of accounts to connections, and optional compression of traffic. There is quite a bit to dig into, so check out the [v2 routes](../running-a-nats-service/configuration/clustering/v2\_routes) page for details.
 
 ### Leafnodes
 

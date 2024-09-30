@@ -52,14 +52,14 @@ Once you have obtained a valid connection, you can use that connection in your a
 
 Finally, the application will need to disconnect safely from NATS.
 
-## [Connect to NATS](connecting/README.md)
+## [Connect to NATS](connecting/README)
 
 ## Monitoring the NATS connection
 
-It is recommended that the application use [connection event listeners](events/events.md) in order to be alerted and log whenever connections, reconnections or disconnections happen. Note that in case of a disconnection from the NATS server process the client library will automatically attempt to [reconnect](reconnect/README.md) to one of the other NATS servers in the cluster. You can also always check the [current connection status](events/README.md).
+It is recommended that the application use [connection event listeners](events/events) in order to be alerted and log whenever connections, reconnections or disconnections happen. Note that in case of a disconnection from the NATS server process the client library will automatically attempt to [reconnect](reconnect/README) to one of the other NATS servers in the cluster. You can also always check the [current connection status](events/README).
 
 ## Disconnecting safely from NATS
-The recommended way to disconnect is to use [Drain()](receiving/drain.md) which will wait for any ongoing processing to conclude and clean everything properly, but if you need to close the connection immediately you can use `close()` from your connection object.
+The recommended way to disconnect is to use [Drain()](receiving/drain) which will wait for any ongoing processing to conclude and clean everything properly, but if you need to close the connection immediately you can use `close()` from your connection object.
 
 # Working with messages
 
@@ -71,53 +71,53 @@ Some messages can be 'acknowledged' (for example message received from JetStream
 
 ### Structured data
 
-Some libraries allow you to easily [send](sending/structure.md) and [receive](receiving/structure.md) structured data.
+Some libraries allow you to easily [send](sending/structure) and [receive](receiving/structure) structured data.
 
 # Using Core NATS
 Once your application has successfully connected to the NATS Server infrastructure, you can then start using the returned connection object to interact with NATS.
 
 ## Core NATS Publishing
-You can directly [publish](sending/README.md) on a connection some data addressed by a subject (or publish a pre-created messages with headers).
+You can directly [publish](sending/README) on a connection some data addressed by a subject (or publish a pre-created messages with headers).
 
 ### Flush and Ping/Pong
 
-Because of caching, if your application is highly sensitive to latency, you may want to [flush](sending/caches.md) after publishing. 
+Because of caching, if your application is highly sensitive to latency, you may want to [flush](sending/caches) after publishing. 
 
-Many of the client libraries use the [PING/PONG interaction](connecting/pingpong.md) built into the NATS protocol to ensure that flush pushed all of the buffered messages to the server. When an application calls flush, most libraries will put a PING on the outgoing queue of messages, and wait for the server to respond with a PONG before saying that the flush was successful.
+Many of the client libraries use the [PING/PONG interaction](connecting/pingpong) built into the NATS protocol to ensure that flush pushed all of the buffered messages to the server. When an application calls flush, most libraries will put a PING on the outgoing queue of messages, and wait for the server to respond with a PONG before saying that the flush was successful.
 
-Even though the client may use PING/PONG for flush, pings sent this way do not count towards [max outgoing pings](connecting/pingpong.md).
+Even though the client may use PING/PONG for flush, pings sent this way do not count towards [max outgoing pings](connecting/pingpong).
 
 ## Core NATS Subscribing
 The process of subscribing involves having the client library tell the NATS that an application is interested in a particular subject. When an application is done with a subscription it unsubscribes telling the server to stop sending messages.
 
-Receiving messages with NATS can be library dependent, some languages, like Go or Java, provide synchronous and asynchronous APIs, while others may only support one type of subscription. In general, applications can receive messages [asynchronously](receiving/async.md) or [synchronously](receiving/sync.md).
+Receiving messages with NATS can be library dependent, some languages, like Go or Java, provide synchronous and asynchronous APIs, while others may only support one type of subscription. In general, applications can receive messages [asynchronously](receiving/async) or [synchronously](receiving/sync).
 
-You can always subscribe to more than one subject at a time using [wildcards](receiving/wildcards.md).
+You can always subscribe to more than one subject at a time using [wildcards](receiving/wildcards).
 
 A client will receive a message for each matching subscription, so if a connection has multiple subscriptions using identical or overlapping subjects \(say `foo` and `>`\) the same message will be sent to the client multiple times.
 
 ### Subscribe as part of a queue group
-You can also subscribe [as part of a distributed *queue group*](receiving/queues.md). All the subscribers with the same queue group name form the distributed queue. The NATS Servers automatically distributes the messages published on the matching subject(s) between the members of the queue group.
+You can also subscribe [as part of a distributed *queue group*](receiving/queues). All the subscribers with the same queue group name form the distributed queue. The NATS Servers automatically distributes the messages published on the matching subject(s) between the members of the queue group.
 
 On a given subject there can be more than one queue group created by subscribing applications, each queue group being an independent queue and distributing its own copy of the messages between the queue group members.
 
 ### Slow consumers
-One thing to keep in mind when making Core NATS subscriptions to subjects is that your application must be able to keep up with the flow of messages published on the subject(s) or it will otherwise become a [slow consumer](events/slow.md)
+One thing to keep in mind when making Core NATS subscriptions to subjects is that your application must be able to keep up with the flow of messages published on the subject(s) or it will otherwise become a [slow consumer](events/slow)
 
 ## Unsubscribing
 
-When you no longer want to receive the messages on a particular subject you must call [unsubscribe](receiving/unsubscribing.md), or you can [automatically unsubscribe](receiving/unsub_after.md) after receiving a specific number of messages.
+When you no longer want to receive the messages on a particular subject you must call [unsubscribe](receiving/unsubscribing), or you can [automatically unsubscribe](receiving/unsub_after) after receiving a specific number of messages.
 ## Making requests to services
 
-You can also use NATS to easily and transparently invoke services without needing to know about the location or number of servers for the service. The connection's [request](sending/request_reply.md) call publishes a message on the specified subject that contains a [reply-to](sending/replyto.md) inbox subject and then waits for a reply message to be received by that inbox.
+You can also use NATS to easily and transparently invoke services without needing to know about the location or number of servers for the service. The connection's [request](sending/request_reply) call publishes a message on the specified subject that contains a [reply-to](sending/replyto) inbox subject and then waits for a reply message to be received by that inbox.
 ## Servicing and replying to requests
 
-The server applications servicing those requests simply need to subscribe to the subject on which the requests are published, process the request messages they receive and [reply](receiving/reply.md) to the message on the subject contained in the request message's [Reply-to](receiving/reply.md) attribute.
+The server applications servicing those requests simply need to subscribe to the subject on which the requests are published, process the request messages they receive and [reply](receiving/reply) to the message on the subject contained in the request message's [Reply-to](receiving/reply) attribute.
 
-Typically, there is no reason not to want to make your service distributed (i.e. scalable and fault-tolerant). This means that unless there's a specific reason not to, application servicing requests should [subscribe to the request subject using the same queue group name](receiving/queues.md). You can have more than one queue group present on a subject (for example you could have one queue group to distribute the processing of the requests between service instances, and another queue group to distribute the logging or monitoring of the requests being made to the service).
+Typically, there is no reason not to want to make your service distributed (i.e. scalable and fault-tolerant). This means that unless there's a specific reason not to, application servicing requests should [subscribe to the request subject using the same queue group name](receiving/queues). You can have more than one queue group present on a subject (for example you could have one queue group to distribute the processing of the requests between service instances, and another queue group to distribute the logging or monitoring of the requests being made to the service).
 # Streaming with JetStream
 
-Some applications can make use of the extra functionalities enabled by [JetStream](../jetstream/develop_jetstream.md) (streams, KV Store, Object Store). Just like you use the Core NATS connection object to invoke Core NATS operations, you use a [*JetStream context*](js/context.md) to invoke JetStream operations. You can specify things like the timeout value for all the operations executed from the context. JS context are light-weight, so while it is safe to share a JS context between threads, for best performance do not be afraid to have a context per thread.
+Some applications can make use of the extra functionalities enabled by [JetStream](../jetstream/develop_jetstream) (streams, KV Store, Object Store). Just like you use the Core NATS connection object to invoke Core NATS operations, you use a [*JetStream context*](js/context) to invoke JetStream operations. You can specify things like the timeout value for all the operations executed from the context. JS context are light-weight, so while it is safe to share a JS context between threads, for best performance do not be afraid to have a context per thread.
 
 ## Streaming functionalities
 
@@ -132,11 +132,11 @@ Before you can use a stream to replay or consume messages published on a subject
 - how it is being stored (e.g. file or memory storage, number of replicas)
 - how long the messages are stored (e.g. depending on limits, or on interest, or as a work queue): the retention policy
 
-Streams can be (and often are) administratively defined ahead of time (for example using the NATS CLI Tool). The application can also [manage streams (and consumers) programmatically](js/streams.md).
+Streams can be (and often are) administratively defined ahead of time (for example using the NATS CLI Tool). The application can also [manage streams (and consumers) programmatically](js/streams).
 ## Publishing to streams
 
 Any message published, on a subject monitored by a stream gets stored in the stream. If your application publishes a message using the Core NATS publish call (from the connection object) on a stream's subject, the message will get stored in the stream, the Core NATS publishers do not know or care whether there is a stream for that subject or not.
-However, if you know that there is going to be a stream defined for that subject you will get higher quality of service by [publishing using the JetStream Context's publish call](js/publish.md) (rather than the connection's publish call). This is because JetStream publications will receive an acknowledgement (or not) from the NATS Servers when the message has been positively received _and_ stored in the stream (while Core NATS publications are not acknowledged by the NATS Servers). This difference is also the reason why there are both synchronous and asynchronous versions of the JetStream publish operation.
+However, if you know that there is going to be a stream defined for that subject you will get higher quality of service by [publishing using the JetStream Context's publish call](js/publish) (rather than the connection's publish call). This is because JetStream publications will receive an acknowledgement (or not) from the NATS Servers when the message has been positively received _and_ stored in the stream (while Core NATS publications are not acknowledged by the NATS Servers). This difference is also the reason why there are both synchronous and asynchronous versions of the JetStream publish operation.
 
 ## Stream consumers
 
@@ -179,7 +179,7 @@ Besides temporal decoupling and queuing, JetStream also enables higher qualities
 
 ## Key Value Store
 
-The [Key Value Store](js/kv.md) functionality is implemented on top of JetStream, but offers a different interface in the form of keys and values rather than subject names and messages. You can use a bucket to put (including compare and set), get and delete a value (a byte array like a message payload) associated with a key (a string, like a subject). It also allows you to 'watch' for changes to the bucket as they happen. And finally it allows you to maintain a history of the values associated with a key over time, as well as get a specific revision of the value.
+The [Key Value Store](js/kv) functionality is implemented on top of JetStream, but offers a different interface in the form of keys and values rather than subject names and messages. You can use a bucket to put (including compare and set), get and delete a value (a byte array like a message payload) associated with a key (a string, like a subject). It also allows you to 'watch' for changes to the bucket as they happen. And finally it allows you to maintain a history of the values associated with a key over time, as well as get a specific revision of the value.
 
 ## Object Store
 

@@ -3,11 +3,11 @@ title: "queues_walkthrough"
 ---
 # NATS Queueing Walkthrough
 
-NATS supports a form of load balancing using [queue groups](queue.md). Subscribers register a queue group name. A single subscriber in the group is randomly selected to receive the message.
+NATS supports a form of load balancing using [queue groups](queue). Subscribers register a queue group name. A single subscriber in the group is randomly selected to receive the message.
 
 ## Walkthrough prerequisites
 
-If you have not already done so, you need to [install](/nats-concepts/what-is-nats/walkthrough_setup.md) the `nats` CLI Tool and optionally the nats-server on your machine.
+If you have not already done so, you need to [install](/nats-concepts/what-is-nats/walkthrough_setup) the `nats` CLI Tool and optionally the nats-server on your machine.
 
 ### 1. Start the first member of the queue group
 

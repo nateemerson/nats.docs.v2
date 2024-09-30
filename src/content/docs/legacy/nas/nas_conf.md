@@ -40,7 +40,7 @@ operator: /Users/synadia/.nsc/nats/Test/Test.jwt
 resolver: URL(http://localhost:9090/jwt/v1/accounts/)
 ```
 
-A step by step tutorial using directory configuration can be found [here](dir_store.md).
+A step by step tutorial using directory configuration can be found [here](dir_store).
 
 ## Configuration File
 

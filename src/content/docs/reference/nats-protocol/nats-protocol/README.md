@@ -7,7 +7,7 @@ title: "README"
 
 The wire protocol used to communicate between the NATS server and clients is a simple, text-based publish/subscribe style protocol. Clients connect to and communicate with `nats-server` (the NATS server) through a regular TCP/IP socket using a small set of protocol operations that are terminated by a new line.
 
-Unlike traditional messaging systems that use a binary message format that require an API to consume, the text-based NATS protocol makes it easy to implement clients in a wide variety of programming and scripting languages. In fact, refer to the topic [NATS Protocol Demo](../nats-protocol-demo.md) to play with the NATS protocol for yourself using telnet.
+Unlike traditional messaging systems that use a binary message format that require an API to consume, the text-based NATS protocol makes it easy to implement clients in a wide variety of programming and scripting languages. In fact, refer to the topic [NATS Protocol Demo](../nats-protocol-demo) to play with the NATS protocol for yourself using telnet.
 
 The NATS server implements a [zero allocation byte parser](https://youtu.be/ylRKac5kSOk?t=10m46s) that is fast and efficient.
 
@@ -204,7 +204,7 @@ To publish an empty message to subject NOTIFY:
 
 The `HPUB` message is the same as `PUB` but extends the message payload to include NATS headers. Note that the payload itself is optional. To omit the payload, set the total message size equal to the size of the headers. Note that the trailing CR+LF is still required.
 
-NATS headers are similar, in structure and semantics, to HTTP headers as `name: value` pairs including supporting multi-value headers. Headers can be mixed case and NATS will preserve case between message publisher and message receiver(s).  See also [ADR-4 NATS Message Headers](https://github.com/nats-io/nats-architecture-and-design/blob/main/adr/ADR-4.md).
+NATS headers are similar, in structure and semantics, to HTTP headers as `name: value` pairs including supporting multi-value headers. Headers can be mixed case and NATS will preserve case between message publisher and message receiver(s).  See also [ADR-4 NATS Message Headers](https://github.com/nats-io/nats-architecture-and-design/blob/main/adr/ADR-4).
 
 ### Syntax
 
@@ -328,7 +328,7 @@ To deliver the same message along with a reply subject:
 
 ### Description
 
-The `HMSG` message is the same as `MSG`, but extends the message payload with headers. See also [ADR-4 NATS Message Headers](https://github.com/nats-io/nats-architecture-and-design/blob/main/adr/ADR-4.md).
+The `HMSG` message is the same as `MSG`, but extends the message payload with headers. See also [ADR-4 NATS Message Headers](https://github.com/nats-io/nats-architecture-and-design/blob/main/adr/ADR-4).
 
 ### Syntax
 

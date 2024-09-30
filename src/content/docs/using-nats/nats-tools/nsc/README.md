@@ -45,12 +45,12 @@ nsc/
 
 You can find various task-oriented tutorials to working with the tool here:
 
-* [Basic Usage](basics.md)
-* [Configuring Account Streams Import/Export](streams.md)
-* [Configuring Account Services Import/Export](services.md)
-* [Signing Keys](signing_keys.md)
-* [Revoking Users or Activations](revocation.md)
-* [Working with Managed Operators](managed.md)
+* [Basic Usage](basics)
+* [Configuring Account Streams Import/Export](streams)
+* [Configuring Account Services Import/Export](services)
+* [Signing Keys](signing_keys)
+* [Revoking Users or Activations](revocation)
+* [Working with Managed Operators](managed)
 
 ## Tool Documentation
 

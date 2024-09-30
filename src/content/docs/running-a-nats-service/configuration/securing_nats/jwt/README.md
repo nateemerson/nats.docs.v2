@@ -3,11 +3,11 @@ title: "README"
 ---
 # Decentralized JWT Authentication/Authorization
 
-With other authentication mechanisms, configuration for identifying a user and [Account](../accounts.md), is in the server configuration file. JWT authentication leverages [JSON Web Tokens \(JWT\)](https://jwt.io/) to describe the various entities supported. When a client connects, servers verify the authenticity of the request using [NKeys](../auth_intro/nkey_auth.md), download account information and validate a trust chain. Users are not directly tracked by the server, but rather verified as and belonging to an [Account](../accounts.md). This enables the management of users, without requiring server configuration updates.
+With other authentication mechanisms, configuration for identifying a user and [Account](../accounts), is in the server configuration file. JWT authentication leverages [JSON Web Tokens \(JWT\)](https://jwt.io/) to describe the various entities supported. When a client connects, servers verify the authenticity of the request using [NKeys](../auth_intro/nkey_auth), download account information and validate a trust chain. Users are not directly tracked by the server, but rather verified as and belonging to an [Account](../accounts). This enables the management of users, without requiring server configuration updates.
 
 Effectively, JWTs improve accounts and provide for a **distributed configuration paradigm**. Previously each user \(or client\) needed to be known and authorized a priori in the server’s configuration requiring an administrator to modify and update server configurations. These chores are eliminated. User creation can even be performed by different entities altogether.
 
-> Note: This scheme improves [accounts](../accounts.md). Functionalities like [isolation](../accounts.md) or defining [exports/imports](../accounts.md#exporting-and-importing) between accounts remain! It moves configuration of accounts, exports/imports or users and their permissions away from the server into several trusted [JSON Web Token \(JWT\)](https://jwt.io/) that are managed separately, therefore removing the need to configure these entities in each and every server. It furthermore adds functionalities like expiration and revocation fore decentralized account management
+> Note: This scheme improves [accounts](../accounts). Functionalities like [isolation](../accounts) or defining [exports/imports](../accounts.md#exporting-and-importing) between accounts remain! It moves configuration of accounts, exports/imports or users and their permissions away from the server into several trusted [JSON Web Token \(JWT\)](https://jwt.io/) that are managed separately, therefore removing the need to configure these entities in each and every server. It furthermore adds functionalities like expiration and revocation fore decentralized account management
 
 ## JSON Web Tokens
 
@@ -18,12 +18,12 @@ Claims are a fancy way of asserting information on a _subject_. In this context,
 NATS further restricts JWTs by requiring that JWTs be:
 
 * Digitally signed _always_ and only using [Ed25519](https://ed25519.cr.yp.to/). 
-* NATS adopts the convention that all _Issuer_ and _Subject_ fields in a JWT claim must be a public [NKEY](../auth_intro/nkey_auth.md). 
+* NATS adopts the convention that all _Issuer_ and _Subject_ fields in a JWT claim must be a public [NKEY](../auth_intro/nkey_auth). 
 * _Issuer_ and _Subject_ must match specific roles depending on the claim [NKeys](https://github.com/nats-io/nkeys).
 
 ### NKey Roles
 
-[NKeys](../auth_intro/nkey_auth.md) Roles are:
+[NKeys](../auth_intro/nkey_auth) Roles are:
 
 * Operators
 * Accounts
@@ -61,14 +61,14 @@ There is very little to configure on the nats-server to enable operator JWT secu
 
 Configuration is broken up into separate steps. Depending on organizational needs these are performed by the same or different entities.
 
-Practically, JWT configuration is done using the [`nsc` tool](../../../../using-nats/nats-tools/nsc/README.md). It can be set up to issue [NKeys](../auth_intro/nkey_auth.md) and corresponding JWTs for all [nkey roles](#nkey-roles): Operator/Account/User \([Example usage](../../../../using-nats/nats-tools/nsc/basics.md#creating-an-operator-account-and-user)\). Despite Account and User creation not happening in server configuration, this model is a centralized authentication and authorization setup.
+Practically, JWT configuration is done using the [`nsc` tool](../../../../using-nats/nats-tools/nsc/README). It can be set up to issue [NKeys](../auth_intro/nkey_auth) and corresponding JWTs for all [nkey roles](#nkey-roles): Operator/Account/User \([Example usage](../../../../using-nats/nats-tools/nsc/basics.md#creating-an-operator-account-and-user)\). Despite Account and User creation not happening in server configuration, this model is a centralized authentication and authorization setup.
 
-Provided institutional trust, it is also possible to use nsc to import account or user public [NKeys](../auth_intro/nkey_auth.md) and issue corresponding JWTs. This way an operator can issue account JWTs and a separate entity can issue JWTs for user associated with it's account. Neither entity has to be aware of the other's private Nkey. This not only allows users to be configured some place other than servers, but also by different organizations altogether. Say administrators of a NATS installation controlling operators, issuing account JWTs to individual prod/dev teams managing their own user. This is a fully decentralized authorization setup!
+Provided institutional trust, it is also possible to use nsc to import account or user public [NKeys](../auth_intro/nkey_auth) and issue corresponding JWTs. This way an operator can issue account JWTs and a separate entity can issue JWTs for user associated with it's account. Neither entity has to be aware of the other's private Nkey. This not only allows users to be configured some place other than servers, but also by different organizations altogether. Say administrators of a NATS installation controlling operators, issuing account JWTs to individual prod/dev teams managing their own user. This is a fully decentralized authorization setup!
 
-With an Operator JWT in place, the server needs to be configured to trust it by specifying `operator`. Furthermore the server needs a way to obtain account JWTs. This done by either defaulting to the resolver specified in the operator jwt or by manually specifying the [resolver](resolver.md). Depending on your configuration an [account server](../../../../using-nats/nats-tools/nsc/basics.md#account-server-configuration) needs to be in place
+With an Operator JWT in place, the server needs to be configured to trust it by specifying `operator`. Furthermore the server needs a way to obtain account JWTs. This done by either defaulting to the resolver specified in the operator jwt or by manually specifying the [resolver](resolver). Depending on your configuration an [account server](../../../../using-nats/nats-tools/nsc/basics.md#account-server-configuration) needs to be in place
 
-> It is possible to [mix](jwt_nkey_auth.md) JWT and [NKEY](../auth_intro/nkey_auth.md)/[Account](../accounts.md) based Authentication/Authorization.
+> It is possible to [mix](jwt_nkey_auth) JWT and [NKEY](../auth_intro/nkey_auth)/[Account](../accounts) based Authentication/Authorization.
 
 # Managing JWT authentication
 
-A lot more information is available in the [In Depth Guide](../../../../running-a-nats-service/nats_admin/jwt.md).
+A lot more information is available in the [In Depth Guide](../../../../running-a-nats-service/nats_admin/jwt).

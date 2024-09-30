@@ -34,7 +34,7 @@ In order to have higher availability you can setup NATS Streaming \(STAN\) to ru
 kubectl apply -f https://raw.githubusercontent.com/nats-io/k8s/master/nats-streaming-server/simple-stan.yml
 ```
 
-For NATS Streaming, it is actually recommended to use the Fault Tolerance mode as that would show better performance than clustering mode and better failover. You can follow this guide to setup [NATS Streaming with Fault Tolerance.](stan-ft-k8s-aws.md)
+For NATS Streaming, it is actually recommended to use the Fault Tolerance mode as that would show better performance than clustering mode and better failover. You can follow this guide to setup [NATS Streaming with Fault Tolerance.](stan-ft-k8s-aws)
 
 ## Using Helm Charts
 

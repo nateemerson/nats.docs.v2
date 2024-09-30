@@ -9,7 +9,7 @@ The NATS.io team is always working to bring you features to improve your NATS ex
 
 Check out the:
 
-- [Upgrade guide](./whats_new_210.md)
+- [Upgrade guide](./whats_new_210)
 - [Podcast EP06: The journey and features of the NATS.io 2.10 release](https://youtu.be/9J4pRzHSc2k)
 - [Release notes](https://github.com/nats-io/nats-server/releases/tag/v2.10.0)
 
@@ -177,7 +177,7 @@ For full release information, see links below;
 
 ## Server release v2.3.0
 
-- [OCSP support](../running-a-nats-service/configuration/ocsp.md)
+- [OCSP support](../running-a-nats-service/configuration/ocsp)
 
 ### JetStream
 
@@ -193,7 +193,7 @@ For full release information, see links below;
 
 ## Server release v2.2.0
 
-See [NATS 2.2](whats_new_22.md) for new features.
+See [NATS 2.2](whats_new_22) for new features.
 
 ## Server release v2.1.7
 
@@ -246,7 +246,7 @@ We've added the option to include subscription details in monitoring endpoints `
 
 ### Log Rotation
 
-NATS introduces `logfile_size_limit` allowing auto-rotation of log files when the size is greater than the configured limit set in `logfile_size_limit` as a number of bytes. You can provide the size with units, such as MB, GB, etc. The backup files will have the same name as the original log file with the suffix .yyyy.mm.dd.hh.mm.ss.micros. For more information see Configuring Logging in the [NATS Server Configuration section](../running-a-nats-service/configuration/logging.md).
+NATS introduces `logfile_size_limit` allowing auto-rotation of log files when the size is greater than the configured limit set in `logfile_size_limit` as a number of bytes. You can provide the size with units, such as MB, GB, etc. The backup files will have the same name as the original log file with the suffix .yyyy.mm.dd.hh.mm.ss.micros. For more information see Configuring Logging in the [NATS Server Configuration section](../running-a-nats-service/configuration/logging).
 
 - Release notes [2.1.4](https://github.com/nats-io/nats-server/releases/tag/v2.1.4)
 - Full list of Changes [2.1.2...2.1.4](https://github.com/nats-io/nats-server/compare/v2.1.2...v2.1.4)
@@ -257,7 +257,7 @@ NATS introduces `logfile_size_limit` allowing auto-rotation of log files when th
 
 Queue Permissions allow you to express authorization for queue groups. As queue groups are integral to implementing horizontally scalable microservices, control of who is allowed to join a specific queue group is important to the overall security model. Original PR - [https://github.com/nats-io/nats-server/pull/1143](https://github.com/nats-io/nats-server/pull/1143)
 
-More information on Queue Permissions can be found in the [Developing with NATS](../using-nats/developing-with-nats/receiving/queues.md) section.
+More information on Queue Permissions can be found in the [Developing with NATS](../using-nats/developing-with-nats/receiving/queues) section.
 
 ## Server release v2.1.0
 

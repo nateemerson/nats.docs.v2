@@ -13,5 +13,5 @@ sc.Subscribe("foo", func(m *stan.Msg) {...}, stan.DurableName("my-durable"))
 
 Unsubscribe will cause the server to completely remove the durable subscription.
 
-Check the [concepts](../nats-streaming-concepts/channels/subscriptions/durable.md) section for more information.
+Check the [concepts](../nats-streaming-concepts/channels/subscriptions/durable) section for more information.
 

@@ -95,7 +95,7 @@ ACSU3Q6LTLBVLGAQUONAGXJHVNWGSKKAUA7IY5TB4Z7PLEKSR5O6JTGR: eyJ0eXAiOiJqd3QiLCJhbG
 
 The `MEMORY` resolver is recommended when the server has a small number of accounts that don't change very often.
 
-For more information on how to configure a memory resolver, see [this tutorial](mem\_resolver.md).
+For more information on how to configure a memory resolver, see [this tutorial](mem\_resolver).
 
 ## URL Resolver
 
@@ -109,4 +109,4 @@ resolver: URL(http://localhost:9090/jwt/v1/accounts/)
 
 > Note that if you are not using a nats-account-server, the URL can be anything as long as by appending the public key for an account, the requested JWT is returned.
 
-If the server used requires client authentication, or you want to specify which CA is trusted for the lookup of account information, specify `resolver_tls`. This [`tls` configuration map](../tls.md) lets you further restrict TLS to the resolver.
+If the server used requires client authentication, or you want to specify which CA is trusted for the lookup of account information, specify `resolver_tls`. This [`tls` configuration map](../tls) lets you further restrict TLS to the resolver.

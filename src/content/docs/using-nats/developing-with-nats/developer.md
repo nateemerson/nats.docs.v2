@@ -12,7 +12,7 @@ Developing with NATS involves a blend of distributed application techniques, com
 | .NET (v2) | [nats.net](https://github.com/nats-io/nats.net), [docs](http://nats-io.github.io/nats.net/), [package](https://www.nuget.org/packages/NATS.Net)       |  Yes              |
 | .NET (v1)| [nats.net.v1](https://github.com/nats-io/nats.net.v1), [doxygen](http://nats-io.github.io/nats.net.v1/), [package](https://www.nuget.org/packages/NATS.Client)              |  Yes       |
 | Rust | [nats.rs](https://github.com/nats-io/nats.rs), [rust doc](https://docs.rs/nats)               |  Yes                                                                                   |
-| JavaScript | [Node.js](https://github.com/nats-io/nats.js#readme), [deno](https://github.com/nats-io/nats.deno/blob/main/README.md), [WebSocket](https://github.com/nats-io/nats.ws#readme) |  Yes  |
+| JavaScript | [Node.js](https://github.com/nats-io/nats.js#readme), [deno](https://github.com/nats-io/nats.deno/blob/main/README), [WebSocket](https://github.com/nats-io/nats.ws#readme) |  Yes  |
 | Python | [nats.py](https://github.com/nats-io/nats.py), [doc](https://nats-io.github.io/nats.py/)                       |  Yes                                                                  |
 | C | [nats.c](https://github.com/nats-io/nats.c), [doc](http://nats-io.github.io/nats.c)                      |  Yes                                                                        |
 | Ruby | [nats-pure.rb](https://github.com/nats-io/nats-pure.rb), [yard](https://www.rubydoc.info/gems/nats)                                                                            |

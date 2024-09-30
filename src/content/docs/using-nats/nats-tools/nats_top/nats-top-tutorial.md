@@ -8,7 +8,7 @@ You can use [nats-top](https://github.com/nats-io/nats-top) to monitor in realti
 ## Prerequisites
 
 * [Set up your Go environment](https://golang.org/doc/install)
-* [Install the NATS server](../../../running-a-nats-service/installation.md)
+* [Install the NATS server](../../../running-a-nats-service/installation)
 
 ## 1. Install nats-top
 
@@ -51,7 +51,7 @@ Connections: 0
 
 Run some NATS client programs and exchange messages.
 
-For the best experience, you will want to run multiple subscribers, at least 2 or 3. Refer to the [example pub-sub clients](../../../running-a-nats-service/clients.md).
+For the best experience, you will want to run multiple subscribers, at least 2 or 3. Refer to the [example pub-sub clients](../../../running-a-nats-service/clients).
 
 ## 5. Check nats-top for statistics
 

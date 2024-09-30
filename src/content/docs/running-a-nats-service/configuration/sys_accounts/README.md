@@ -3,7 +3,7 @@ title: "README"
 ---
 # System Events
 
-NATS servers leverage [Accounts](../securing_nats/accounts.md) support and generate events such as:
+NATS servers leverage [Accounts](../securing_nats/accounts) support and generate events such as:
 
 * account connect/disconnect
 * authentication errors
@@ -14,10 +14,10 @@ In addition the server supports a limited number of requests that can be used to
 
 These events are enabled by configuring `system_account` and [subscribing/requesting](./#available-events-and-services) using a _system account_ user.
 
-[Accounts](../securing_nats/accounts.md) are used so that subscriptions from your applications, say `>`, do not receive system events and vice versa. Using accounts requires either:
+[Accounts](../securing_nats/accounts) are used so that subscriptions from your applications, say `>`, do not receive system events and vice versa. Using accounts requires either:
 
 * [Configuring authentication locally](./#local-configuration) and listing one of the accounts in `system_account`
-* Or by using decentralized authentication and authorization via [jwt](../securing_nats/jwt/) as shown in this [Tutorial](sys_accounts.md). In this case `system_account` contains the account public key.
+* Or by using decentralized authentication and authorization via [jwt](../securing_nats/jwt/) as shown in this [Tutorial](sys_accounts). In this case `system_account` contains the account public key.
 
 N.B. The default global account `$G` does not publish advisories.
 
@@ -42,7 +42,7 @@ In addition other tools with system account privileges, can initiate requests \(
 * `$SYS.REQ.SERVER.<id>.STATSZ` \(request server stat summary\)
 * `$SYS.REQ.SERVER.PING` \(discover servers - will return multiple messages\)
 
-[Monitoring endpoints](../monitoring.md) as listed in the table below are accessible as system services using the following subject pattern:
+[Monitoring endpoints](../monitoring) as listed in the table below are accessible as system services using the following subject pattern:
 
 * `$SYS.REQ.SERVER.<id>.<endpoint-name>` \(request server monitoring endpoint corresponding to endpoint name.\)
 * `$SYS.REQ.SERVER.PING.<endpoint-name>` \(from all server, request server monitoring endpoint corresponding to endpoint name - will return multiple messages\)

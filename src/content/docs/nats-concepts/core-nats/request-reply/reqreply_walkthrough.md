@@ -3,11 +3,11 @@ title: "reqreply_walkthrough"
 ---
 # NATS Request-Reply Walkthrough
 
-NATS supports [request-reply](reqreply.md) messaging. In this tutorial you explore how to exchange point-to-point messages using NATS.
+NATS supports [request-reply](reqreply) messaging. In this tutorial you explore how to exchange point-to-point messages using NATS.
 
 ## Prerequisites
 
-If you have not already done so, you need to [install](/nats-concepts/what-is-nats/walkthrough_setup.md) the `nats` CLI Tool and optionally, the nats-server on your machine.  
+If you have not already done so, you need to [install](/nats-concepts/what-is-nats/walkthrough_setup) the `nats` CLI Tool and optionally, the nats-server on your machine.  
   
 ## Walkthrough
 

@@ -12,13 +12,13 @@ The leaf node configuration block is used to configure incoming as well as outgo
 | `host`          | Interface where the server will listen for incoming leafnode connections.                                                                                                                  |
 | `port`          | Port where the server will listen for incoming leafnode connections (default is 7422).                                                                                                     |
 | `listen`        | Combines `host` and `port` as `<host>:<port>`                                                                                                                                              |
-| `tls`           | TLS configuration block (same as other nats-server [`tls` configuration](/running-a-nats-service/configuration/securing_nats/tls.md)).                                                     |
+| `tls`           | TLS configuration block (same as other nats-server [`tls` configuration](/running-a-nats-service/configuration/securing_nats/tls)).                                                     |
 | `advertise`     | Hostport `<host>:<port>` to advertise how this server can be contacted by leaf nodes. This is useful in cluster setups with NAT.                                                           |
 | `no_advertise`  | if `true` the server shouldn't be advertised to leaf nodes.                                                                                                                                |
 | `authorization` | Authorization block. [**See Authorization Block section below**](leafnode_conf.md#authorization-block).                                                                                    |
 | `remotes`       | List of [`remote`](leafnode_conf.md#leafnode-remotes-entry-block) entries specifying servers where leafnode client connection can be made.                                                 |
 | `reconnect`     | Interval in seconds at which reconnect attempts to a remote server are made.                                                                                                               |
-| `compression`   | Configures compression of leafnode connections similar to [cluster routes](../clustering/v2_routes.md). Defaults to `s2_auto`. See details [here](../clustering/v2_routes.md#compression). |
+| `compression`   | Configures compression of leafnode connections similar to [cluster routes](../clustering/v2_routes). Defaults to `s2_auto`. See details [here](../clustering/v2_routes.md#compression). |
 
 ## TLS Block
 
@@ -78,7 +78,7 @@ Whether configuring users in the account or in this dedicated authorization bloc
 | ---------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `user`     | Username for the leaf node connection.                                                                                              |
 | `password` | Password for the user entry.                                                                                                        |
-| `account`  | [Account](../securing_nats/accounts.md) this leaf node connection should be bound to.                                               |
+| `account`  | [Account](../securing_nats/accounts) this leaf node connection should be bound to.                                               |
 | `timeout`  | Maximum number of seconds to wait for leaf node authentication.                                                                     |
 | `users`    | List of credentials and account to bind to leaf node connections. [**See User Block section below**](leafnode_conf.md#users-block). |
 
@@ -88,7 +88,7 @@ Whether configuring users in the account or in this dedicated authorization bloc
 | ---------- | ------------------------------------------------------------------------------------- |
 | `user`     | Username for the leaf node connection.                                                |
 | `password` | Password for the user entry.                                                          |
-| `account`  | [Account](../securing_nats/accounts.md) this leaf node connection should be bound to. |
+| `account`  | [Account](../securing_nats/accounts) this leaf node connection should be bound to. |
 
 Here are some examples of using basic user/password authentication for leaf nodes (note while this is using accounts it is not using JWTs)
 
@@ -147,7 +147,7 @@ If other form of credentials are used (jwt, nkey or other), then the server will
 | `url`            | Leafnode URL (URL protocol should be `nats-leaf`).                                                                                                                                                                                                                        |
 | `urls`           | Leafnode URL array. Supports multiple URLs for discovery, e.g., urls: \[ "nats-leaf://host1:7422", "nats-leaf://host2:7422" ]                                                                                                                                             |
 | `no_randomize`   |  IF true, always try connecting in sequence on the URLs in the list. Default behavior if to shuffle the URLs and start connection attempts with a random URL|
-| `account`        | [Account](../securing_nats/accounts.md) name or JWT public key identifying the local account to bind to this remote server. Any traffic locally on this account will be forwarded to the remote server.                                                                   |
+| `account`        | [Account](../securing_nats/accounts) name or JWT public key identifying the local account to bind to this remote server. Any traffic locally on this account will be forwarded to the remote server.                                                                   |
 | `deny_imports`    | List of subjects which will not be imported over this leaf node connection. Subscriptions to those subjects will not be propagated to the hub.                                                                                                                           |
 | `deny_exports`    | List of subjects which will not be exported over this leaf node connection. Subscriptions to those subjects will not be propagated into the leaf node.                                                                                      |
 | `credentials`    | Credential file for connecting to the leafnode server.                                                                                                                |
@@ -155,7 +155,7 @@ If other form of credentials are used (jwt, nkey or other), then the server will
 | `tls`            | A [TLS configuration](leafnode_conf.md#tls-configuration-block) block. Leafnode client will use specified TLS certificates when connecting/authenticating.                                                                                                                |
 | `ws_compression` | If connecting with [Websocket](leafnode_conf.md#connecting-using-websocket-protocol) protocol, this boolean (`true` or `false`) indicates to the remote server that it wishes to use compression. The default is `false`.                                                 |
 | `ws_no_masking`  | If connecting with [Websocket](leafnode_conf.md#connecting-using-websocket-protocol) protocol, this boolean indicates to the remote server that it wishes not to mask outbound WebSocket frames. The default is `false`, which means that outbound frames will be masked. |
-| `compression`   | Configures compression of leafnode connections similar to [cluster routes](../clustering/v2_routes.md). Defaults to `s2_auto`. See details [here](../clustering/v2_routes.md#compression). |
+| `compression`   | Configures compression of leafnode connections similar to [cluster routes](../clustering/v2_routes). Defaults to `s2_auto`. See details [here](../clustering/v2_routes.md#compression). |
 | `hub`   | Default is false. If set to true the roles of leaf node and hub will be reversed. This allows the hub to initiate a leaf node connection to the leaf. |
 | `first_info_timeout`   | Default `1s`. The first information sent back by the hub (incoming side) will be the server metadata. The client will only wait `first_info_timeout` before giving up. This is useful if there is the change that the port on the other side is not a NATS server or not a port accepting leaf node connection. In this case the client would wait forever for the metadata.  |
 

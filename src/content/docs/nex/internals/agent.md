@@ -19,13 +19,13 @@ All function-type workloads must rely on [host services](../host\_services/) in 
 
 The agent process is the `nex-agent` binary produced by [this Go code](https://github.com/synadia-io/nex/tree/main/agent). This binary is _not_ executed directly by the Node process, nor is it ever launched by developers or users.
 
-The agent resides within the [root file system](rootfs.md). When you launch a Firecracker virtual machine, it isn't quite like issuing a Docker `run` command. Launching a Firecracker VM is like booting an operating system. In order to tell a Linux operating system what processes to start when launched (e.g. when the Firecracker VM boots), we need an [init](https://en.wikipedia.org/wiki/Init) system.
+The agent resides within the [root file system](rootfs). When you launch a Firecracker virtual machine, it isn't quite like issuing a Docker `run` command. Launching a Firecracker VM is like booting an operating system. In order to tell a Linux operating system what processes to start when launched (e.g. when the Firecracker VM boots), we need an [init](https://en.wikipedia.org/wiki/Init) system.
 
 Init systems can be confusing and intimidating. When you distill it down to the core, the `init` process in Linux is just the first process started during boot. Depending on which application you use for `init`, you configure your startup services and other boot-time launch activity differently.
 
 For reasons that we won't get into here, it's not a good idea to make a process like `nex-agent` be the init process. Rather, we want the init process to spawn and manage the `nex-agent`.
 
-To do this, we're using [OpenRC](https://github.com/OpenRC/openrc/blob/master/user-guide.md). The default OpenRC configuration used for the agent is as follows:
+To do this, we're using [OpenRC](https://github.com/OpenRC/openrc/blob/master/user-guide). The default OpenRC configuration used for the agent is as follows:
 
 ```
 #!/sbin/openrc-run

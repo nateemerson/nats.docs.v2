@@ -242,4 +242,4 @@ nats pub -s "nats://nats-2:4222" hello again
 
 ## Tutorial
 
-See the [NATS Docker tutorial](nats-docker-tutorial.md) for more instructions on using the NATS server Docker image.
+See the [NATS Docker tutorial](nats-docker-tutorial) for more instructions on using the NATS server Docker image.

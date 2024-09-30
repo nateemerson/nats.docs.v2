@@ -299,7 +299,7 @@ When the nats-server was started with `-V` tracing, you can see the signature in
 }]
 ```
 
-On connect, clients are instantly sent the nonce to sign as part of the `INFO` message (formatting added manually). Since `telnet` will not authenticate, the server closes the connection after hitting the [authorization ](../configuration/securing_nats/authorization.md)timeout.
+On connect, clients are instantly sent the nonce to sign as part of the `INFO` message (formatting added manually). Since `telnet` will not authenticate, the server closes the connection after hitting the [authorization ](../configuration/securing_nats/authorization)timeout.
 
 ```
 > telnet localhost 4222
@@ -393,7 +393,7 @@ The issuer field of the User JWT identifies the Account, and the `nats-server` t
 
 To obtain an Account JWT, the nats-server is configured with one of
 three
-[resolver](../configuration/securing_nats/jwt/resolver.md)
+[resolver](../configuration/securing_nats/jwt/resolver)
 types. Which one to pick depends upon your needs:
 
 * [mem-resolver](../configuration/securing_nats/jwt/resolver.md#memory):

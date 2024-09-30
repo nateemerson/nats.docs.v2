@@ -8,7 +8,7 @@ NATS is fast and lightweight and places a priority on performance. the `nats` CL
 ## Prerequisites
 
 * [Install the NATS CLI Tool](./)
-* [Install the NATS server](../../../running-a-nats-service/installation.md)
+* [Install the NATS server](../../../running-a-nats-service/installation)
 
 ## Start the NATS server with monitoring enabled
 

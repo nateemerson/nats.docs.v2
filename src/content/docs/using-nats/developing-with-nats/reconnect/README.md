@@ -5,12 +5,12 @@ title: "README"
 
 All the client libraries maintained on the [nats.io GitHub page](https://github.com/nats-io) will automatically attempt to re-connect if their current server connection gets disconnected for any reason. Upon re-connection the client library will automatically re-establish all the subscriptions, there is nothing for the application programmer to do.
 
-Unless specifically [disabled](disable.md) client will try to re-connect to one of the servers it knows about, either through the URLs provided in the `connect` call or the URLs provided by the NATS system during earlier connects. This feature allows NATS applications and the NATS system itself to self-heal and reconfigure itself with no additional configuration or intervention.
+Unless specifically [disabled](disable) client will try to re-connect to one of the servers it knows about, either through the URLs provided in the `connect` call or the URLs provided by the NATS system during earlier connects. This feature allows NATS applications and the NATS system itself to self-heal and reconfigure itself with no additional configuration or intervention.
 
-You can adjust the [wait time](wait.md) between connections attempts, the [maximum](max.md) number of reconnection attempts, and adjust the size of the reconnection [buffer](buffer.md).
+You can adjust the [wait time](wait) between connections attempts, the [maximum](max) number of reconnection attempts, and adjust the size of the reconnection [buffer](buffer).
 ## Advisories
 
-Your application can register callback to receive [events](events.md) to be notified about the following connection events:
+Your application can register callback to receive [events](events) to be notified about the following connection events:
 
 * `ClosedCB ConnHandler`
 

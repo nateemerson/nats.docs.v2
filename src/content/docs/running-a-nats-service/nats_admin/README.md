@@ -12,10 +12,10 @@ Managing a NATS Server is simple, typical lifecycle operations include:
   * `nats consumer --help` to monitor, manage stream consumers
   * `nats context --help` if you need to switch between servers, clusters or user credentials
 * Using the [`nsc`](../../using-nats/nats-tools/nsc/) CLI tool when using JWT based authentication and authorization, to create, revoke operators, accounts, and user (i.e. client applications) JWTs and keys.
-* [Sending signals](signals.md) to a server to reload a configuration or rotate log files
-* [Upgrading](upgrading\_cluster.md) a server (or cluster)
-* Understanding [slow consumers](slow\_consumers.md)
+* [Sending signals](signals) to a server to reload a configuration or rotate log files
+* [Upgrading](upgrading\_cluster) a server (or cluster)
+* Understanding [slow consumers](slow\_consumers)
 * Monitoring the server via:
   * The monitoring [endpoint](monitoring/) and tools like [nats-top](../../using-nats/nats-tools/nats\_top/)
   * By subscribing to [system events](../configuration/sys\_accounts/)
-* Gracefully shut down a server with [Lame Duck Mode](lame\_duck\_mode.md)
+* Gracefully shut down a server with [Lame Duck Mode](lame\_duck\_mode)

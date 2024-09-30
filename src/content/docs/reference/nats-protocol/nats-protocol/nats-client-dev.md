@@ -29,7 +29,7 @@ Probably the best way to learn about implementing a client is to look at one of 
 * [Python](https://github.com/nats-io/nats.py)
 * [C](https://github.com/nats-io/nats.c)
 
-See [Developing with NATS](../../../using-nats/developing-with-nats/developer.md) for more links and community supported languages.
+See [Developing with NATS](../../../using-nats/developing-with-nats/developer) for more links and community supported languages.
 
 ## Client connection options
 

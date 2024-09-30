@@ -7,7 +7,7 @@ title: "README"
 
 NATS supports running each server in clustered mode. You can cluster servers together for high volume messaging systems and resiliency and high availability.
 
-NATS servers achieve this by gossiping about and connecting to, all of the servers they know, thus dynamically forming a full mesh. Once clients [connect](../../../using-nats/developing-with-nats/connecting/cluster.md) or [re-connect](/using-nats/developing-with-nats/reconnect) to a particular server, they are informed about current cluster members. Because of this behavior, a cluster can grow, shrink and self heal. The full mesh does not necessarily have to be explicitly configured either.
+NATS servers achieve this by gossiping about and connecting to, all of the servers they know, thus dynamically forming a full mesh. Once clients [connect](../../../using-nats/developing-with-nats/connecting/cluster) or [re-connect](/using-nats/developing-with-nats/reconnect) to a particular server, they are informed about current cluster members. Because of this behavior, a cluster can grow, shrink and self heal. The full mesh does not necessarily have to be explicitly configured either.
 
 Note that NATS clustered servers have a forwarding limit of one hop. This means that each `nats-server` instance will **only** forward messages that it has received **from a client** to the immediately adjacent `nats-server` instances to which it has routes. Messages received **from** a route will only be distributed to local clients.
 
@@ -15,7 +15,7 @@ For the cluster to successfully form a full mesh and NATS to function as intende
 
 ## Cluster URLs
 
-In addition to a port to listen for clients, `nats-server` listens on a "cluster" URL \(the `-cluster` option\). Additional `nats-server` servers can then add that URL to their `-routes` argument to join the cluster. These options can also be specified in a [config file](cluster_config.md), but only the command-line version is shown in this overview for simplicity.
+In addition to a port to listen for clients, `nats-server` listens on a "cluster" URL \(the `-cluster` option\). Additional `nats-server` servers can then add that URL to their `-routes` argument to join the cluster. These options can also be specified in a [config file](cluster_config), but only the command-line version is shown in this overview for simplicity.
 
 ## Running a Simple Cluster
 
@@ -62,7 +62,7 @@ When a NATS server routes to a specified URL, it will advertise its own cluster 
 
 **Note:** when using the `-routes` option, you must also specify a `-cluster` option.
 
-Clustering can also be configured using the server [config file](cluster_config.md).
+Clustering can also be configured using the server [config file](cluster_config).
 
 ## Three Server Cluster Example
 

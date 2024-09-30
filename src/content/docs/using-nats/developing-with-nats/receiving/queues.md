@@ -3,7 +3,7 @@ title: "queues"
 ---
 # Queue Subscriptions
 
-Subscribing to a [queue group](../../../nats-concepts/core-nats/queue-groups/queue.md) is only slightly different than subscribing to a subject alone. The application simply includes a queue name with the subscription. The server will load balance between all members of the queue group. In a cluster setup, every member has the same chance of receiving a particular message.
+Subscribing to a [queue group](../../../nats-concepts/core-nats/queue-groups/queue) is only slightly different than subscribing to a subject alone. The application simply includes a queue name with the subscription. The server will load balance between all members of the queue group. In a cluster setup, every member has the same chance of receiving a particular message.
 
 Keep in mind that queue groups in NATS are dynamic and do not require any server configuration.
 

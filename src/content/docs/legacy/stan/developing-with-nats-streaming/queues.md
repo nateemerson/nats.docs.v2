@@ -39,5 +39,5 @@ qsub2, _ := sc.QueueSubscribe(channelName,
 
 If the queue subscription is durable, only the last member calling `Unsubscribe()` will cause the durable queue group to be removed from the server.
 
-Check the [concepts](../nats-streaming-concepts/channels/subscriptions/queue-group.md) section for more information.
+Check the [concepts](../nats-streaming-concepts/channels/subscriptions/queue-group) section for more information.
 

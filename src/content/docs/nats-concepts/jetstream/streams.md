@@ -3,7 +3,7 @@ title: "streams"
 ---
 # Streams
 
-Streams are message stores, each stream defines how messages are stored and what the limits (duration, size, interest) of the retention are. Streams consume normal [NATS subjects](../subjects.md), any message published on those subjects will be captured in the defined storage system. You can do a normal publish to the subject for unacknowledged delivery, though it’s better to use the JetStream publish calls instead as the JetStream server will reply with an acknowledgement that it was successfully stored.
+Streams are message stores, each stream defines how messages are stored and what the limits (duration, size, interest) of the retention are. Streams consume normal [NATS subjects](../subjects), any message published on those subjects will be captured in the defined storage system. You can do a normal publish to the subject for unacknowledged delivery, though it’s better to use the JetStream publish calls instead as the JetStream server will reply with an acknowledgement that it was successfully stored.
 
 ![Orders](../../.gitbook/assets/streams-and-consumers-75p.png)
 
@@ -188,7 +188,7 @@ Subject transformation and filtering allow for powerful data distribution archit
 A mirror can source its messages from exactly one stream and a clients can not directly write to the  mirror. Although messages cannot be published to a mirror directly by clients, messages can be deleted on-demand (beyond the retention policy), and consumers have all capabilities available on regular streams.
 
 **For details see:**
-* [Source and Mirror](source_and_mirror.md)
+* [Source and Mirror](source_and_mirror)
 
 
 ### AllowRollup
@@ -208,11 +208,11 @@ For high scale needs where, currently, a dedicated consumer may add too much ove
 The fields for configuring republish include:
 
 - `Source` - An optional subject pattern which is a subset of the subjects bound to the stream. It defaults to all messages in the stream, e.g. `>`.
-- `Destination` - The destination subject messages will be re-published to. The source and destination must be a valid [subject mapping](../../nats-concepts/subject_mapping.md).
+- `Destination` - The destination subject messages will be re-published to. The source and destination must be a valid [subject mapping](../../nats-concepts/subject_mapping).
 - `HeadersOnly` - If true, the message data will not be included in the re-published message, only an additional header `Nats-Msg-Size` indicating the size of the message in bytes.
 
-For each message that is republished, a set of [headers](./headers.md) are automatically added.
+For each message that is republished, a set of [headers](./headers) are automatically added.
 
 ### SubjectTransform
 
-If configured, the `SubjectTransform` will perform a subject transform to matching subjects of messages received by the stream and transform the subject, before storing it in the stream. The transform configuration specifies a `Source` and `Destination` field, following the rules of [subject transform](../../running-a-nats-service/configuration/configuring_subject_mapping.md).
+If configured, the `SubjectTransform` will perform a subject transform to matching subjects of messages received by the stream and transform the subject, before storing it in the stream. The transform configuration specifies a `Source` and `Destination` field, following the rules of [subject transform](../../running-a-nats-service/configuration/configuring_subject_mapping).

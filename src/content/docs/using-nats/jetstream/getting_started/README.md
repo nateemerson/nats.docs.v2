@@ -26,5 +26,5 @@ jetstream {
 
 Normally JetStream will be run in clustered mode and will replicate data, so the best place to store JetStream data would be locally on a fast SSD. One should specifically avoid NAS or NFS storage for JetStream.
 
-See [Using Docker](../../../running-a-nats-service/running/nats_docker/jetstream_docker.md) and [Using Source](using_source.md) for more information.
+See [Using Docker](../../../running-a-nats-service/running/nats_docker/jetstream_docker) and [Using Source](using_source) for more information.
 
