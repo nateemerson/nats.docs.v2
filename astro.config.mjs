@@ -6,13 +6,18 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'NATS Docs',
+      logo: {
+        src: './src/assets/nats.svg'
+      },
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/nats-io/',
+				twitter: 'https://x.com/nats_io',
 			},
 			sidebar: [
 				{
 					label: 'Introduction',
+          collapsed: true,
 					items: [
 						{ label: 'Overview', slug: 'overview' },
 						{ label: 'Quickstart', slug: 'quickstart' },
@@ -21,6 +26,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Development',
+          collapsed: true,
 					items: [
 						{ label: 'Connecting', slug: 'development/connecting' },
 						{ label: 'Messaging', slug: 'development/messaging' },
@@ -33,6 +39,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Architecture',
+          collapsed: true,
 					items: [
 						{ label: 'Application', slug: 'architecture/application' },
 						{ label: 'System', slug: 'architecture/system' },
@@ -40,6 +47,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Deployment',
+          collapsed: true,
 					items: [
 						{ label: 'Cloud', slug: 'deployment/cloud' },
 						{ label: 'Edge', slug: 'deployment/edge' },
@@ -50,6 +58,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Operations',
+          collapsed: true,
 					items: [
 						{ label: 'Monitoring', slug: 'operations/monitoring' },
 						{ label: 'Security', slug: 'operations/security' },
@@ -59,6 +68,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Reference',
+          collapsed: true,
 					items: [
 						{ label: 'Server Config', slug: 'reference/server-config' },
 						{ label: 'Protocols', slug: 'reference/protocols' },
