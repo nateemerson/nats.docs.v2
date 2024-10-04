@@ -21,7 +21,9 @@ export default defineConfig({
 					items: [
 						{ label: 'Overview', slug: 'overview' },
 						{ label: 'Quickstart', slug: 'quickstart' },
-						{ label: 'NATS Fundamentals', slug: 'fundamentals' },
+						{ label: 'Use Cases', slug: 'use-cases' },
+						{ label: 'Clients', slug: 'clients' },
+						{ label: 'Concepts', slug: 'concepts' },
 					],
 				},
 				{
@@ -43,17 +45,18 @@ export default defineConfig({
 					items: [
 						{ label: 'Application', slug: 'architecture/application' },
 						{ label: 'System', slug: 'architecture/system' },
+						{ label: 'Topology', slug: 'architecture/topology' },
+						{ label: 'Asset Placement', slug: 'architecture/asset-placement' },
 					],
 				},
 				{
 					label: 'Deployment',
           collapsed: true,
 					items: [
-						{ label: 'Cloud', slug: 'deployment/cloud' },
-						{ label: 'Edge', slug: 'deployment/edge' },
-						{ label: 'Kuberenetes', slug: 'deployment/kubernetes' },
-						{ label: 'Containers', slug: 'deployment/containers' },
-						{ label: 'Bare Metal', slug: 'deployment/bare-metal' },
+						{ label: 'Deployment Options', slug: 'deployment/options' },
+						{ label: 'systemd', slug: 'deployment/systemd' },
+						{ label: 'Kubernetes/k3s', slug: 'deployment/kubernetes' },
+						{ label: 'Docker/podman', slug: 'deployment/docker' },
 					],
 				},
 				{

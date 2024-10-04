@@ -1,0 +1,41 @@
+---
+title: Connecting
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+NATS clients have a range of options when establishing a connection to a NATS
+deployment. By default, all clients are configured to connect to the server on
+the loopback interface `127.0.0.1` and on port `4222`.
+
+```shell
+$ nats-server
+[93039] 2023/04/09 20:13:23.934070 [INF] Starting nats-server
+[93039] 2023/04/09 20:13:23.934164 [INF]   Version:  2.9.15
+[93039] 2023/04/09 20:13:23.934168 [INF]   Git:      [not set]
+[93039] 2023/04/09 20:13:23.934172 [INF]   Name:     NBM2FFR6CT6DC6MHIYSORF56COBM4I7EEBTV4KAF2NGIJZGUIEP75BNF
+[93039] 2023/04/09 20:13:23.934174 [INF]   ID:       NBM2FFR6CT6DC6MHIYSORF56COBM4I7EEBTV4KAF2NGIJZGUIEP75BNF
+[93039] 2023/04/09 20:13:23.936995 [INF] Listening for client connections on 0.0.0.0:4222
+[93039] 2023/04/09 20:13:23.937261 [INF] Server is ready
+```
+
+The default URL.
+
+<Tabs>
+  <TabItem label="CLI">
+    ```shell
+$ nats rtt
+nats://127.0.0.1:4222:
+
+   127.0.0.1: 110.558µs
+    ```
+    \* For the CLI, we are simply showing a round-trip time call from the client
+        to the server.
+  </TabItem>
+  <TabItem label="Go">
+    ```go
+nc, err := nats.Connect(nats.DefaultURL)
+if err != nil {
+}
+    ```
+  </TabItem>
+</Tabs>
